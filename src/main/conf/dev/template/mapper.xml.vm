@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="${package.Mapper}.${table.mapperName}">
+#if(${enableCache})
+    <!-- 开启二级缓存 -->
+    <cache type="org.mybatis.caches.ehcache.LoggingEhcache"/>
+#end
+
+#if(${baseResultMap})
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="${package.Entity}.${entity}">
+#foreach($field in ${table.fields})
+#if(${field.keyFlag})
+        <id column="${field.name}" property="${field.propertyName}" />
+#else
+        <result column="${field.name}" property="${field.propertyName}" />
+#end
+#end
+    </resultMap>
+#end
+
+#if(${baseColumnList})
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ${table.fieldNames}
+    </sql>
+#end
+
+<select id="selectPageNew" resultType="java.util.HashMap">
+        SELECT 
+        b.* 
+        FROM 
+        ${table} b where 1=1  
+      
+            <if test=" zhen != null and zhen != '' ">
+                 and b.zhen like concat('%',#{zhen},'%')
+            </if>
+           <if test=" dscd != null and dscd != '' ">
+                 and b.dscd like concat('',#{dscd},'%')
+            </if>
+            <if test=" dscd2 != null and dscd2 != '' ">
+                 and b.dscd like concat('',#{dscd2},'%')
+            </if>
+            
+</select>
+
+
+</mapper>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sky.mapper.BaseInfoMapper">
+
+	<select id="selectPageNew" resultType="java.util.HashMap">
+        SELECT 
+        b.*
+        FROM 
+        base_info b where delflag is null   
+      
+            <if test=" zhen != null and zhen != '' ">
+                 and b.zhen like concat('%',#{zhen},'%')
+            </if>
+           <if test=" dscd != null and dscd != '' ">
+                 and b.dscd like concat('',#{dscd},'%')
+            </if>
+            <if test=" dscd2 != null and dscd2 != '' ">
+                 and b.dscd like concat('',#{dscd2},'%')
+            </if>
+            
+    </select>
+
+</mapper>

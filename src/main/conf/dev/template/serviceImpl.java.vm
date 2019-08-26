@@ -1,0 +1,30 @@
+package ${package.ServiceImpl};
+
+import ${package.Entity}.${entity};
+import ${package.Mapper}.${table.mapperName};
+import ${package.Service}.${table.serviceName};
+import com.sky.commons.utils.PageInfo;
+import ${superServiceImplClassPackage};
+import org.springframework.stereotype.Service;
+import org.springframework.beans.factory.annotation.Autowired;
+import com.baomidou.mybatisplus.plugins.Page;
+import java.util.List;
+/**
+ * <p>
+ * ${table.comment}  服务实现类
+ * </p>
+ * @author ${author}
+ * @since ${date}
+ */
+@Service
+public class ${table.serviceImplName} extends ${superServiceImplClass}<${table.mapperName}, ${entity}> implements ${table.serviceName} {
+    @Autowired private ${entity}Mapper ${table.entityPath}Mapper;
+    
+    @Override
+    public void selectDataGrid(PageInfo pageInfo) {
+        Page<${entity}> page = new Page<${entity}>(pageInfo.getNowpage(), pageInfo.getSize());
+        List list = ${table.entityPath}Mapper.selectPageNew(page, pageInfo.getCondition());
+        pageInfo.setRows(list);
+        pageInfo.setTotal(page.getTotal());
+    }
+}

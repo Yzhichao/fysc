@@ -1,0 +1,22 @@
+ html, body, #mapDiv,#allmap {
+    padding:0;
+    margin:0;
+    height:100%;
+    width:100%;
+}
+#xzkcss{
+    z-index:200px;
+    position:absolute;
+    right:18px;
+    top:10px;
+    font-size:12px;
+}  
+.pagination-info{
+    display: none;
+}
+.pagination-page-list{
+   display: none;
+}
+.conys div{
+	line-height: 23px;
+}
