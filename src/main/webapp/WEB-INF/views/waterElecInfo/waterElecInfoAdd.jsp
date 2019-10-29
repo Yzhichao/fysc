@@ -36,8 +36,8 @@
         	}
         });
     });
-    
-   
+
+
 </script>
 <div class="easyui-layout" data-options="fit:true,border:false" >
     <div data-options="region:'center',border:false" style="padding: 3px;" >
@@ -52,7 +52,7 @@
                 </tr>
 <tr>
     <td>工程名称</td>
-    <td><input name="name" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+    <td><input name="name" data-options="required:true" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
 </tr>
 <tr>
     <td>水资源三级分区</td>
@@ -68,11 +68,11 @@
 </tr>
 <tr>
     <td>工程等级</td>
-    <td><input name="prgrd" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+    <td><input name="prgrd" data-options="required:true" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
 </tr>
 <tr>
     <td>装机容量(kW)</td>
-    <td><input name="ic" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+    <td><input name="ic" data-options="required:true" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
 </tr>
 <tr>
     <td>保证出力(kW)</td>

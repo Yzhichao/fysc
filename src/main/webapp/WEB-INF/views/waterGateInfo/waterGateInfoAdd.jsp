@@ -50,7 +50,7 @@
                 </tr>
 <tr>
     <td>工程名称</td>
-    <td><input name="prnm" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+    <td><input name="prnm" data-options="required:true" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
 </tr>
 <tr>
     <td>水资源三级分区</td>
@@ -70,15 +70,15 @@
 </tr>
 <tr>
     <td>工程等级</td>
-    <td><input name="prgrd" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+    <td><input name="prgrd" style="height: 29px;width:260px;" data-options="required:true" class="easyui-textbox" type="text"></td>
 </tr>
 <tr>
     <td>闸孔数量(孔)</td>
-    <td><input name="holeNum" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+    <td><input name="holeNum" data-options="required:true" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
 </tr>
 <tr>
     <td>闸孔总净宽(m)</td>
-    <td><input name="holeWid" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+    <td><input name="holeWid" data-options="required:true" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
 </tr>
 <tr>
     <td>副闸闸孔数量(孔)</td>
@@ -139,11 +139,11 @@
 
                 <tr>
                     <td>经度(°)</td>
-                    <td><input id="waterGateInfoAddJd" name="lgtd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5" type="text" ><a href="javascript:void(0);" class="easyui-linkbutton" data-options="iconCls:'fi-magnifying-glass',plain:true" onclick="selMap('waterGateInfoAddJd','waterGateInfoAddWd');">查看地图</a></td>
+                    <td><input id="waterGateInfoAddJd" name="lgtd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5,required:true" type="text" ><a href="javascript:void(0);" class="easyui-linkbutton" data-options="iconCls:'fi-magnifying-glass',plain:true" onclick="selMap('waterGateInfoAddJd','waterGateInfoAddWd');">查看地图</a></td>
                 </tr>
                 <tr>
                     <td>纬度(°)</td>
-                    <td><input id="waterGateInfoAddWd" name="lttd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5" type="text" ></td>
+                    <td><input id="waterGateInfoAddWd" name="lttd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5,required:true" type="text" ></td>
                 </tr>
             </table>
         </form>

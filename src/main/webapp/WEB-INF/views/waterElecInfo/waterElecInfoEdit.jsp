@@ -29,7 +29,7 @@
                 }
             }
         });
-        
+
        $('#waterElecInfoEditQy').combotree({
     	    url : '${path }/user/tree',
             parentField : 'pid',
@@ -42,7 +42,7 @@
         		$("#waterElecInfoEditZwQy").val(node.text);
         	}
         });
-        
+
     });
 </script>
 <div class="easyui-layout" data-options="fit:true,border:false">
@@ -57,7 +57,7 @@
                 </tr>
                 <tr>
     <td>工程名称</td>
-    <td><input name="name" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${waterElecInfo.name}"></td>
+    <td><input name="name" data-options="required:true" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${waterElecInfo.name}"></td>
 </tr>
 <tr>
     <td>水资源三级分区</td>
@@ -73,11 +73,11 @@
 </tr>
 <tr>
     <td>工程等级</td>
-    <td><input name="prgrd" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${waterElecInfo.prgrd}"></td>
+    <td><input name="prgrd" data-options="required:true" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${waterElecInfo.prgrd}"></td>
 </tr>
 <tr>
     <td>装机容量(kW)</td>
-    <td><input name="ic" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${waterElecInfo.ic}"></td>
+    <td><input name="ic" data-options="required:true" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${waterElecInfo.ic}"></td>
 </tr>
 <tr>
     <td>保证出力(kW)</td>

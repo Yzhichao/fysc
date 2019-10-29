@@ -29,7 +29,7 @@
                 }
             }
         });
-        
+
        $('#warnEquipInfoEditQy').combotree({
     	    url : '${path }/user/tree',
             parentField : 'pid',
@@ -42,7 +42,7 @@
         		$("#warnEquipInfoEditZwQy").val(node.text);
         	}
         });
-        
+
     });
 </script>
 <div class="easyui-layout" data-options="fit:true,border:false">
@@ -66,11 +66,11 @@
                 </tr>
                 <tr>
                     <td>经度(°)</td>
-                    <td><input id="warnEquipInfoEditJd" name="jd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5" type="text" value="${warnEquipInfo.jd}"><a href="javascript:void(0);" class="easyui-linkbutton" data-options="iconCls:'fi-magnifying-glass',plain:true" onclick="selMap('warnEquipInfoEditJd','warnEquipInfoEditWd');">查看地图</a></td>
+                    <td><input id="warnEquipInfoEditJd" name="jd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5,required:true" type="text" value="${warnEquipInfo.jd}"><a href="javascript:void(0);" class="easyui-linkbutton" data-options="iconCls:'fi-magnifying-glass',plain:true" onclick="selMap('warnEquipInfoEditJd','warnEquipInfoEditWd');">查看地图</a></td>
                 </tr>
                 <tr>
                     <td>纬度(°)</td>
-                    <td><input id="warnEquipInfoEditWd" name="wd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5" type="text" value="${warnEquipInfo.wd}"></td>
+                    <td><input id="warnEquipInfoEditWd" name="wd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5,required:true" type="text" value="${warnEquipInfo.wd}"></td>
                 </tr>
                 <tr>
                     <td>备注</td>

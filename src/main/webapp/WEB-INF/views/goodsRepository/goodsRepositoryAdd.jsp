@@ -36,8 +36,8 @@
         	}
         });
     });
-    
-   
+
+
 </script>
 <div class="easyui-layout" data-options="fit:true,border:false" >
     <div data-options="region:'center',border:false" style="overflow: hidden;padding: 3px;" >
@@ -52,23 +52,23 @@
                 </tr>
 				<tr>
 				    <td>名称</td>
-				    <td><input name="name" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+				    <td><input name="name" data-options="required:true" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
 				</tr>
 				<tr>
 				    <td>负责人</td>
-				    <td><input name="head" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+				    <td><input name="head" data-options="required:true" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
 				</tr>
 				<tr>
 				    <td>联系电话</td>
-				    <td><input name="tell" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+				    <td><input name="tell" data-options="required:true" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
 				</tr>
 				<tr>
 				    <td>仓库级别</td>
-				    <td><input name="wrGrd" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+				    <td><input name="wrGrd" data-options="required:true" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
 				</tr>
 				<tr>
 				    <td>位置</td>
-				    <td><input name="add" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+				    <td><input name="add" data-options="required:true" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
 				</tr>
 				<tr>
 				    <td>备注</td>
@@ -76,11 +76,11 @@
 				</tr>
                 <tr>
                     <td>经度(°)</td>
-                    <td><input id="goodsRepositoryAddJd" name="lgtd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5" type="text" ><a href="javascript:void(0);" class="easyui-linkbutton" data-options="iconCls:'fi-magnifying-glass',plain:true" onclick="selMap('goodsRepositoryAddJd','goodsRepositoryAddWd');">查看地图</a></td>
+                    <td><input id="goodsRepositoryAddJd" name="lgtd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5,required:true" type="text" ><a href="javascript:void(0);" class="easyui-linkbutton" data-options="iconCls:'fi-magnifying-glass',plain:true" onclick="selMap('goodsRepositoryAddJd','goodsRepositoryAddWd');">查看地图</a></td>
                 </tr>
                 <tr>
                     <td>纬度(°)</td>
-                    <td><input id="goodsRepositoryAddWd" name="lttd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5" type="text" ></td>
+                    <td><input id="goodsRepositoryAddWd" name="lttd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5,required:true" type="text" ></td>
                 </tr>
             </table>
         </form>

@@ -29,7 +29,7 @@
                 }
             }
         });
-        
+
        $('#dangerAreaInfoEditQy').combotree({
     	    url : '${path }/user/tree',
             parentField : 'pid',
@@ -42,7 +42,7 @@
         		$("#dangerAreaInfoEditZwQy").val(node.text);
         	}
         });
-        
+
     });
 </script>
 <div class="easyui-layout" data-options="fit:true,border:false">
@@ -58,13 +58,13 @@
                 </tr>
                 <tr>
 				    <td>位置</td>
-				    <td><input name="add" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${dangerAreaInfo.add}"></td>
+				    <td><input data-options="required:true" name="add" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${dangerAreaInfo.add}"></td>
 				</tr><tr>
 				    <td>危险区名</td>
-				    <td><input name="dzName" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${dangerAreaInfo.dzName}"></td>
+				    <td><input name="dzName" data-options="required:true" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${dangerAreaInfo.dzName}"></td>
 				</tr><tr>
 				    <td>易受灾类型</td>
-				    <td><input name="afType" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${dangerAreaInfo.afType}"></td>
+				    <td><input name="afType" data-options="required:true" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${dangerAreaInfo.afType}"></td>
 				</tr><tr>
 				    <td>房屋数量</td>
 				    <td><input name="hsNum" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${dangerAreaInfo.hsNum}"></td>
@@ -86,11 +86,11 @@
 				</tr>
                 <tr>
                     <td>经度(°)</td>
-                    <td><input id="dangerAreaInfoEditJd" name="lgtd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5" type="text" value="${dangerAreaInfo.lgtd}"><a href="javascript:void(0);" class="easyui-linkbutton" data-options="iconCls:'fi-magnifying-glass',plain:true" onclick="selMap('dangerAreaInfoEditJd','dangerAreaInfoEditWd');">查看地图</a></td>
+                    <td><input id="dangerAreaInfoEditJd" name="lgtd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5,required:true" type="text" value="${dangerAreaInfo.lgtd}"><a href="javascript:void(0);" class="easyui-linkbutton" data-options="iconCls:'fi-magnifying-glass',plain:true" onclick="selMap('dangerAreaInfoEditJd','dangerAreaInfoEditWd');">查看地图</a></td>
                 </tr>
                 <tr>
                     <td>纬度(°)</td>
-                    <td><input id="dangerAreaInfoEditWd" name="lttd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5" type="text" value="${dangerAreaInfo.lttd}"></td>
+                    <td><input id="dangerAreaInfoEditWd" name="lttd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5,required:true" type="text" value="${dangerAreaInfo.lttd}"></td>
                 </tr>
             </table>
         </form>

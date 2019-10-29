@@ -36,8 +36,8 @@
         	}
         });
     });
-    
-   
+
+
 </script>
 <div class="easyui-layout" data-options="fit:true,border:false" >
     <div data-options="region:'center',border:false" style="padding: 3px;" >
@@ -53,15 +53,15 @@
 
 <tr>
     <td>名称</td>
-    <td><input name="name" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+    <td><input name="name" data-options="required:true" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
 </tr>
 <tr>
     <td>位置</td>
-    <td><input name="add" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+    <td><input name="add" data-options="required:true" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
 </tr>
 <tr>
     <td>占地面积(m2)</td>
-    <td><input name="area" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+    <td><input name="area" data-options="required:true" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
 </tr>
 <tr>
     <td>容纳人数</td>
@@ -69,13 +69,13 @@
 </tr>
 <tr>
     <td>庇护场所等级</td>
-    <td><input name="shGrd" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+    <td><input name="shGrd" data-options="required:true" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
 </tr>
 <tr>
     <td>备注</td>
     <td><input name="comments" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
 </tr>
-<!-- 
+<!--
 <tr>
     <td>市</td>
     <td><input name="cty" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
@@ -91,7 +91,7 @@
 </tr>
 <tr>
     <td>庇护场所类型</td>
-    <td><input name="shType" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+    <td><input name="shType" data-options="required:true" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
 </tr>
 <tr>
     <td>管理单位</td>
@@ -141,13 +141,13 @@
 
                 <tr>
                     <td>经度</td>
-                    <td><input id="avoideDisasterPointAddJd" name="lgtd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5" type="text" >
+                    <td><input id="avoideDisasterPointAddJd" name="lgtd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5,required:true" type="text" >
                     <a href="javascript:void(0);" class="easyui-linkbutton" data-options="iconCls:'fi-magnifying-glass',plain:true" onclick="selMap('avoideDisasterPointAddJd','avoideDisasterPointAddWd');">查看地图</a>
                     </td>
                 </tr>
                 <tr>
                     <td>纬度</td>
-                    <td><input id="avoideDisasterPointAddWd" name="lttd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5" type="text" ></td>
+                    <td><input id="avoideDisasterPointAddWd" name="lttd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5,required:true" type="text" ></td>
                 </tr>
 
 

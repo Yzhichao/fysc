@@ -29,7 +29,7 @@
                 }
             }
         });
-        
+
         $('#reservoirInfoEditQy').combotree({
             url : '${path }/user/tree',
             parentField : 'pid',
@@ -42,7 +42,7 @@
         		$("#reservoirInfoEditZwQy").val(node.text);
         	}
         });
-        
+
     });
 </script>
 <div class="easyui-layout" data-options="fit:true,border:false">
@@ -62,7 +62,7 @@
 </tr>
 <tr>
     <td>水库名称</td>
-    <td><input name="rsname" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${reservoirInfo.rsname}"></td>
+    <td><input name="rsname" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${reservoirInfo.rsname}" data-options="required:true"></td>
 </tr>
 <tr>
     <td>曾用水库名称</td>
@@ -70,15 +70,15 @@
 </tr>
 <tr>
     <td>工程状态</td>
-    <td><input name="prst" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${reservoirInfo.prst}"></td>
+    <td><input name="prst" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${reservoirInfo.prst}" data-options="required:true"></td>
 </tr>
 <tr>
     <td>工程规模</td>
-    <td><input name="prsc" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${reservoirInfo.prsc}"></td>
+    <td><input name="prsc" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${reservoirInfo.prsc}" data-options="required:true"></td>
 </tr>
 <tr>
     <td>工程等别</td>
-    <td><input name="prgrd" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${reservoirInfo.prgrd}"></td>
+    <td><input name="prgrd" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${reservoirInfo.prgrd}" data-options="required:true"></td>
 </tr>
 <tr>
     <td>水库类别</td>
@@ -90,7 +90,7 @@
 </tr>
 <tr>
     <td>高程基准面</td>
-    <td><input name="eldtm" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${reservoirInfo.eldtm}"></td>
+    <td><input name="eldtm" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${reservoirInfo.eldtm}" data-options="required:true"></td>
 </tr>
 <tr>
     <td>所在流域</td>
@@ -190,11 +190,11 @@
 </tr>
 <tr>
     <td>校核洪水位/m</td>
-    <td><input name="chflz" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${reservoirInfo.chflz}"></td>
+    <td><input name="chflz" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${reservoirInfo.chflz}" data-options="required:true"></td>
 </tr>
 <tr>
     <td>设计洪水位/m</td>
-    <td><input name="dsflz" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${reservoirInfo.dsflz}"></td>
+    <td><input name="dsflz" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${reservoirInfo.dsflz}" data-options="required:true"></td>
 </tr>
 <tr>
     <td>正常蓄水位/m</td>
@@ -210,7 +210,7 @@
 </tr>
 <tr>
     <td>汛期限制水位-主汛期/m</td>
-    <td><input name="mainfsltdz" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${reservoirInfo.mainfsltdz}"></td>
+    <td><input name="mainfsltdz" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${reservoirInfo.mainfsltdz}" data-options="required:true"></td>
 </tr>
 <tr>
     <td>汛期限制水位-后汛期/m</td>
@@ -222,7 +222,7 @@
 </tr>
 <tr>
     <td>总库容/万m³</td>
-    <td><input name="ttcp" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${reservoirInfo.ttcp}"></td>
+    <td><input name="ttcp" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${reservoirInfo.ttcp}" data-options="required:true"></td>
 </tr>
 <tr>
     <td>防洪库容/万m³</td>
@@ -758,11 +758,11 @@
 </tr>
                 <tr>
                     <td>经度(°)</td>
-                    <td><input id="reservoirInfoEditJd" name="lgtd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5" type="text" value="${reservoirInfo.lgtd}"><a href="javascript:void(0);" class="easyui-linkbutton" data-options="iconCls:'fi-magnifying-glass',plain:true" onclick="selMap('reservoirInfoEditJd','reservoirInfoEditWd');">查看地图</a></td>
+                    <td><input id="reservoirInfoEditJd" name="lgtd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5,required:true" type="text" value="${reservoirInfo.lgtd}"><a href="javascript:void(0);" class="easyui-linkbutton" data-options="iconCls:'fi-magnifying-glass',plain:true" onclick="selMap('reservoirInfoEditJd','reservoirInfoEditWd');">查看地图</a></td>
                 </tr>
                 <tr>
                     <td>纬度(°)</td>
-                    <td><input id="reservoirInfoEditWd" name="lttd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5" type="text" value="${reservoirInfo.lttd}"></td>
+                    <td><input id="reservoirInfoEditWd" name="lttd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5,required:true" type="text" value="${reservoirInfo.lttd}"></td>
                 </tr>
             </table>
         </form>

@@ -36,8 +36,8 @@
         	}
         });
     });
-    
-   
+
+
 </script>
 <div class="easyui-layout" data-options="fit:true,border:false" >
     <div data-options="region:'center',border:false" style="overflow: hidden;padding: 3px;" >
@@ -62,7 +62,7 @@
  -->
 <tr>
     <td>桥梁名称</td>
-    <td><input name="brName" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+    <td><input name="brName" data-options="required:true" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
 </tr>
 <tr>
     <td>所在河道</td>
@@ -82,22 +82,22 @@
 </tr>
 <tr>
     <td>桥梁类型</td>
-    <td><input name="brType" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+    <td><input name="brType" data-options="required:true" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
 </tr>
 <tr>
     <td>备注</td>
     <td><input name="comments" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
 </tr>
 
-                
-                
+
+
                 <tr>
                     <td>经度(°)</td>
-                    <td><input id="bridgeInfoAddJd" name="lgtd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5" type="text" ><a href="javascript:void(0);" class="easyui-linkbutton" data-options="iconCls:'fi-magnifying-glass',plain:true" onclick="selMap('bridgeInfoAddJd','bridgeInfoAddWd');">查看地图</a></td>
+                    <td><input id="bridgeInfoAddJd" name="lgtd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5,required:true" type="text" ><a href="javascript:void(0);" class="easyui-linkbutton" data-options="iconCls:'fi-magnifying-glass',plain:true" onclick="selMap('bridgeInfoAddJd','bridgeInfoAddWd');">查看地图</a></td>
                 </tr>
                 <tr>
                     <td>纬度(°)</td>
-                    <td><input id="bridgeInfoAddWd" name="lttd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5" type="text"></td>
+                    <td><input id="bridgeInfoAddWd" name="lttd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5,required:true" type="text"></td>
                 </tr>
             </table>
         </form>

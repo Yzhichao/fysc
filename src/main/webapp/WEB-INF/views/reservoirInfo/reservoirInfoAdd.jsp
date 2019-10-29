@@ -54,7 +54,7 @@
 </tr>
 <tr>
     <td>水库名称</td>
-    <td><input name="rsname" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+    <td><input name="rsname" style="height: 29px;width:260px;" class="easyui-textbox" type="text" data-options="required:true"></td>
 </tr>
 <tr>
     <td>曾用水库名称</td>
@@ -62,15 +62,15 @@
 </tr>
 <tr>
     <td>工程状态</td>
-    <td><input name="prst" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+    <td><input name="prst" style="height: 29px;width:260px;" class="easyui-textbox" type="text" data-options="required:true"></td>
 </tr>
 <tr>
     <td>工程规模</td>
-    <td><input name="prsc" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+    <td><input name="prsc" style="height: 29px;width:260px;" class="easyui-textbox" type="text" data-options="required:true"></td>
 </tr>
 <tr>
     <td>工程等别</td>
-    <td><input name="prgrd" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+    <td><input name="prgrd" style="height: 29px;width:260px;" class="easyui-textbox" type="text" data-options="required:true"></td>
 </tr>
 <tr>
     <td>水库类别</td>
@@ -82,7 +82,7 @@
 </tr>
 <tr>
     <td>高程基准面</td>
-    <td><input name="eldtm" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+    <td><input name="eldtm" style="height: 29px;width:260px;" class="easyui-textbox" type="text" data-options="required:true"></td>
 </tr>
 <tr>
     <td>所在流域</td>
@@ -182,11 +182,11 @@
 </tr>
 <tr>
     <td>校核洪水位/m</td>
-    <td><input name="chflz" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+    <td><input name="chflz" style="height: 29px;width:260px;" class="easyui-textbox" type="text" data-options="required:true"></td>
 </tr>
 <tr>
     <td>设计洪水位/m</td>
-    <td><input name="dsflz" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+    <td><input name="dsflz" style="height: 29px;width:260px;" class="easyui-textbox" type="text" data-options="required:true"></td>
 </tr>
 <tr>
     <td>正常蓄水位/m</td>
@@ -202,7 +202,7 @@
 </tr>
 <tr>
     <td>汛期限制水位-主汛期/m</td>
-    <td><input name="mainfsltdz" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+    <td><input name="mainfsltdz" style="height: 29px;width:260px;" class="easyui-textbox" type="text" data-options="required:true"></td>
 </tr>
 <tr>
     <td>汛期限制水位-后汛期/m</td>
@@ -214,7 +214,7 @@
 </tr>
 <tr>
     <td>总库容/万m³</td>
-    <td><input name="ttcp" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+    <td><input name="ttcp" style="height: 29px;width:260px;" class="easyui-textbox" type="text" data-options="required:true"></td>
 </tr>
 <tr>
     <td>防洪库容/万m³</td>
@@ -746,11 +746,11 @@
 </tr>
                 <tr>
                     <td>经度(°)</td>
-                    <td><input id="reservoirInfoAddJd" name="lgtd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5" type="text" ><a href="javascript:void(0);" class="easyui-linkbutton" data-options="iconCls:'fi-magnifying-glass',plain:true" onclick="selMap('reservoirInfoAddJd','reservoirInfoAddWd');">查看地图</a></td>
+                    <td><input id="reservoirInfoAddJd" name="lgtd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5,required:true" type="text" ><a href="javascript:void(0);" class="easyui-linkbutton" data-options="iconCls:'fi-magnifying-glass',plain:true" onclick="selMap('reservoirInfoAddJd','reservoirInfoAddWd');">查看地图</a></td>
                 </tr>
                 <tr>
                     <td>纬度(°)</td>
-                    <td><input id="reservoirInfoAddWd" name="lttd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5" type="text" ></td>
+                    <td><input id="reservoirInfoAddWd" name="lttd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5,required:true" type="text" ></td>
                 </tr>
                 <tr>
 				    <td>概况</td>

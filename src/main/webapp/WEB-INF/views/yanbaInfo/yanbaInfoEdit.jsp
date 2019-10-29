@@ -29,7 +29,7 @@
                 }
             }
         });
-        
+
        $('#yanbaInfoEditQy').combotree({
     	    url : '${path }/user/tree',
             parentField : 'pid',
@@ -42,7 +42,7 @@
         		$("#yanbaInfoEditZwQy").val(node.text);
         	}
         });
-        
+
     });
 </script>
 <div class="easyui-layout" data-options="fit:true,border:false">
@@ -56,16 +56,16 @@
                     <select id="yanbaInfoEditQy" name="dscd"  style="width: 260px; height: 29px;" class="easyui-validatebox" data-options="required:true"></select>
                     <input name="twn" id="yanbaInfoEditZwQy" type="hidden" value="${yanbaInfo.twn}" ></td>
                 </tr>
-<%--                 
+<%--
                 <tr>
 				    <td>行政区名称</td>
 				    <td><input name="addvnm" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${yanbaInfo.addvnm}"></td>
 				</tr>
-				
+
 				 --%>
 				<tr>
 				    <td>堰坝名称</td>
-				    <td><input name="wrName" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${yanbaInfo.wrName}"></td>
+				    <td><input name="wrName" data-options="required:true" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${yanbaInfo.wrName}"></td>
 				</tr>
 				<tr>
 				    <td>所在河道</td>
@@ -73,7 +73,7 @@
 				</tr>
 				<tr>
 				    <td>堰坝类型</td>
-				    <td><input name="wrType" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${yanbaInfo.wrType}"></td>
+				    <td><input name="wrType" data-options="required:true" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${yanbaInfo.wrType}"></td>
 				</tr>
 				<tr>
 				    <td>容积（m^3)</td>
@@ -89,12 +89,12 @@
 				</tr>
 				<tr>
                     <td>经度(°)</td>
-                    <td><input id="yanbaInfoEditJd" name="lgtd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5" type="text" value="${yanbaInfo.lgtd}"><a href="javascript:void(0);" class="easyui-linkbutton" data-options="iconCls:'fi-magnifying-glass',plain:true" onclick="selMap('yanbaInfoEditJd','yanbaInfoEditWd');">查看地图</a></td>
+                    <td><input id="yanbaInfoEditJd" name="lgtd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5,required:true" type="text" value="${yanbaInfo.lgtd}"><a href="javascript:void(0);" class="easyui-linkbutton" data-options="iconCls:'fi-magnifying-glass',plain:true" onclick="selMap('yanbaInfoEditJd','yanbaInfoEditWd');">查看地图</a></td>
                 </tr>
                 <tr>
                     <td>纬度(°)</td>
-                    <td><input id="yanbaInfoEditWd" name="lttd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5" type="text" value="${yanbaInfo.lttd}"></td>
-                </tr>                
+                    <td><input id="yanbaInfoEditWd" name="lttd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5,required:true" type="text" value="${yanbaInfo.lttd}"></td>
+                </tr>
             </table>
         </form>
     </div>

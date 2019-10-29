@@ -33,8 +33,8 @@
             panelHeight : 300
         });
     });
-    
-   
+
+
 </script>
 <div class="easyui-layout" data-options="fit:true,border:false" >
     <div data-options="region:'center',border:false" style="padding: 3px;" >
@@ -48,23 +48,23 @@
                 </tr>
 <tr>
     <td>堤防名称</td>
-    <td><input name="dknm" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+    <td><input name="dknm" data-options="required:true" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
 </tr>
 <tr>
     <td>河流岸别</td>
-    <td><input name="rvbk" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+    <td><input name="rvbk" data-options="required:true" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
 </tr>
 <tr>
     <td>堤防跨界情况</td>
-    <td><input name="dkcr" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+    <td><input name="dkcr" data-options="required:true" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
 </tr>
 <tr>
     <td>堤防类型</td>
-    <td><input name="dktype" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+    <td><input name="dktype" data-options="required:true" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
 </tr>
 <tr>
     <td>堤防型式</td>
-    <td><input name="dktype1" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+    <td><input name="dktype1" data-options="required:true" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
 </tr>
 <tr>
     <td>工程状态</td>
@@ -104,23 +104,23 @@
 </tr>
 <tr>
     <td>起x</td>
-    <td><input name="stlgtd" id="stlgtd" style="height: 29px;width:260px;" class="easyui-textbox" type="text" data-options="min:0,precision:5" >
+    <td><input name="stlgtd" id="stlgtd" style="height: 29px;width:260px;" class="easyui-textbox" type="text" data-options="min:0,precision:5,required:true" >
     <a href="javascript:void(0);" class="easyui-linkbutton" data-options="iconCls:'fi-magnifying-glass',plain:true" onclick="selMap('stlgtd','stlttd');">查看地图</a>
     </td>
 </tr>
 <tr>
     <td>起y</td>
-    <td><input name="stlttd" id="stlttd" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+    <td><input name="stlttd" id="stlttd" style="height: 29px;width:260px;" class="easyui-textbox" type="text" data-options="min:0,precision:5,required:true"></td>
 </tr>
 <tr>
     <td>终x</td>
-    <td><input name="endlgtd" id="endlgtd" style="height: 29px;width:260px;" class="easyui-textbox" type="text">
+    <td><input name="endlgtd" id="endlgtd" style="height: 29px;width:260px;" class="easyui-textbox" type="text" data-options="min:0,precision:5,required:true">
     <a href="javascript:void(0);" class="easyui-linkbutton" data-options="iconCls:'fi-magnifying-glass',plain:true" onclick="selMap('endlgtd','endlttd');">查看地图</a>
     </td>
 </tr>
 <tr>
     <td>终y</td>
-    <td><input name="endlttd" id="endlttd" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+    <td><input name="endlttd" id="endlttd" style="height: 29px;width:260px;" class="easyui-textbox" type="text" data-options="min:0,precision:5,required:true"></td>
 </tr>
             </table>
         </form>

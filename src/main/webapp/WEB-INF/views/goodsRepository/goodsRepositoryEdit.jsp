@@ -29,7 +29,7 @@
                 }
             }
         });
-        
+
        $('#goodsRepositoryEditQy').combotree({
     	    url : '${path }/user/tree',
             parentField : 'pid',
@@ -42,7 +42,7 @@
         		$("#goodsRepositoryEditZwQy").val(node.text);
         	}
         });
-        
+
     });
 </script>
 <div class="easyui-layout" data-options="fit:true,border:false">
@@ -58,30 +58,30 @@
                 </tr>
 				<tr>
 				    <td>名称</td>
-				    <td><input name="name" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${goodsRepository.name}"></td>
+				    <td><input name="name" data-options="required:true" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${goodsRepository.name}"></td>
 				</tr><tr>
 				    <td>负责人</td>
-				    <td><input name="head" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${goodsRepository.head}"></td>
+				    <td><input name="head" data-options="required:true" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${goodsRepository.head}"></td>
 				</tr><tr>
 				    <td>联系电话</td>
-				    <td><input name="tell" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${goodsRepository.tell}"></td>
+				    <td><input name="tell" data-options="required:true" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${goodsRepository.tell}"></td>
 				</tr><tr>
 				    <td>仓库级别</td>
-				    <td><input name="wrGrd" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${goodsRepository.wrGrd}"></td>
+				    <td><input name="wrGrd" data-options="required:true" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${goodsRepository.wrGrd}"></td>
 				</tr><tr>
 				    <td>位置</td>
-				    <td><input name="add" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${goodsRepository.add}"></td>
+				    <td><input name="add" data-options="required:true" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${goodsRepository.add}"></td>
 				</tr><tr>
 				    <td>备注</td>
 				    <td><input name="comments" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${goodsRepository.comments}"></td>
 				</tr>
                 <tr>
                     <td>经度(°)</td>
-                    <td><input id="goodsRepositoryEditJd" name="lgtd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5" type="text" value="${goodsRepository.lgtd}"><a href="javascript:void(0);" class="easyui-linkbutton" data-options="iconCls:'fi-magnifying-glass',plain:true" onclick="selMap('goodsRepositoryEditJd','goodsRepositoryEditWd');">查看地图</a></td>
+                    <td><input id="goodsRepositoryEditJd" name="lgtd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5,required:true" type="text" value="${goodsRepository.lgtd}"><a href="javascript:void(0);" class="easyui-linkbutton" data-options="iconCls:'fi-magnifying-glass',plain:true" onclick="selMap('goodsRepositoryEditJd','goodsRepositoryEditWd');">查看地图</a></td>
                 </tr>
                 <tr>
                     <td>纬度(°)</td>
-                    <td><input id="goodsRepositoryEditWd" name="lttd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5" type="text" value="${goodsRepository.lttd}"></td>
+                    <td><input id="goodsRepositoryEditWd" name="lttd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5,required:true" type="text" value="${goodsRepository.lttd}"></td>
                 </tr>
             </table>
         </form>

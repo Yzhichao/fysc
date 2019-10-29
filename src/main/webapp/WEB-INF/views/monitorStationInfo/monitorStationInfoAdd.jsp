@@ -36,8 +36,8 @@
         	}
         });
     });
-    
-   
+
+
 </script>
 <div class="easyui-layout" data-options="fit:true,border:false" >
     <div data-options="region:'center',border:false" style="overflow: hidden;padding: 3px;" >
@@ -50,10 +50,10 @@
                     	<input name="twn" id="monitorStationInfoAddZwQy" type="hidden">
                     </td>
                 </tr>
-                
+
 				<tr>
 				    <td>测站名称</td>
-				    <td><input name="stnm" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+				    <td><input name="stnm" data-options="required:true" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
 				</tr>
 				<tr>
 				    <td>测站编码</td>
@@ -61,7 +61,7 @@
 				</tr>
 				<tr>
 				    <td>站址</td>
-				    <td><input name="add" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+				    <td><input name="add" data-options="required:true" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
 				</tr>
 				<tr>
 				    <td>所在河流</td>
@@ -69,7 +69,7 @@
 				</tr>
 				<tr>
 				    <td>测站类型</td>
-				    <td><input name="stType" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+				    <td><input name="stType" data-options="required:true" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
 				</tr>
 				<tr>
 				    <td>建站时间</td>
@@ -77,20 +77,20 @@
 				</tr>
 				<tr>
 				    <td>隶属单位</td>
-				    <td><input name="addc" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+				    <td><input name="addc" data-options="required:true" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
 				</tr>
 				<tr>
 				    <td>备注</td>
 				    <td><input name="commrnts" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
 				</tr>
-				                
+
                 <tr>
                     <td>经度(°)</td>
-                    <td><input id="monitorStationInfoAddJd" name="lgtd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5" type="text" ><a href="javascript:void(0);" class="easyui-linkbutton" data-options="iconCls:'fi-magnifying-glass',plain:true" onclick="selMap('monitorStationInfoAddJd','monitorStationInfoAddWd');">查看地图</a></td>
+                    <td><input id="monitorStationInfoAddJd" name="lgtd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5,required:true" type="text" ><a href="javascript:void(0);" class="easyui-linkbutton" data-options="iconCls:'fi-magnifying-glass',plain:true" onclick="selMap('monitorStationInfoAddJd','monitorStationInfoAddWd');">查看地图</a></td>
                 </tr>
                 <tr>
                     <td>纬度(°)</td>
-                    <td><input id="monitorStationInfoAddWd" name="lttd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5" type="text" ></td>
+                    <td><input id="monitorStationInfoAddWd" name="lttd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5,required:true" type="text" ></td>
                 </tr>
             </table>
         </form>

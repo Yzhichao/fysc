@@ -29,7 +29,7 @@
                 }
             }
         });
-        
+
        $('#bridgeInfoEditQy').combotree({
     	    url : '${path }/user/tree',
             parentField : 'pid',
@@ -42,7 +42,7 @@
         		$("#bridgeInfoEditZwQy").val(node.text);
         	}
         });
-        
+
     });
 </script>
 <div class="easyui-layout" data-options="fit:true,border:false">
@@ -56,7 +56,7 @@
                     <select id="bridgeInfoEditQy" name="dscd"  style="width: 260px; height: 29px;" class="easyui-validatebox" data-options="required:true"></select>
                     <input name="twn" id="bridgeInfoEditZwQy" type="hidden" value="${bridgeInfo.twn}" ></td>
                 </tr>
-<%-- 
+<%--
 <tr>
     <td>行政编码</td>
     <td><input name="addvcd" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${bridgeInfo.addvcd}"></td>
@@ -68,7 +68,7 @@
  --%>
  <tr>
     <td>桥梁名称</td>
-    <td><input name="brName" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${bridgeInfo.brName}"></td>
+    <td><input name="brName" data-options="required:true" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${bridgeInfo.brName}"></td>
 </tr><tr>
     <td>所在河道</td>
     <td><input name="rv" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${bridgeInfo.rv}"></td>
@@ -83,7 +83,7 @@
     <td><input name="brHight" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${bridgeInfo.brHight}"></td>
 </tr><tr>
     <td>桥梁类型</td>
-    <td><input name="brType" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${bridgeInfo.brType}"></td>
+    <td><input name="brType" data-options="required:true" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${bridgeInfo.brType}"></td>
 </tr><tr>
     <td>备注</td>
     <td><input name="comments" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${bridgeInfo.comments}"></td>
@@ -91,11 +91,11 @@
 
                 <tr>
                     <td>经度(°)</td>
-                    <td><input id="bridgeInfoEditJd" name="lgtd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5" type="text" value="${bridgeInfo.lgtd}"><a href="javascript:void(0);" class="easyui-linkbutton" data-options="iconCls:'fi-magnifying-glass',plain:true" onclick="selMap('bridgeInfoEditJd','bridgeInfoEditWd');">查看地图</a></td>
+                    <td><input id="bridgeInfoEditJd" name="lgtd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5,required:true" type="text" value="${bridgeInfo.lgtd}"><a href="javascript:void(0);" class="easyui-linkbutton" data-options="iconCls:'fi-magnifying-glass',plain:true" onclick="selMap('bridgeInfoEditJd','bridgeInfoEditWd');">查看地图</a></td>
                 </tr>
                 <tr>
                     <td>纬度(°)</td>
-                    <td><input id="bridgeInfoEditWd" name="lttd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5" type="text" value="${bridgeInfo.lttd}"></td>
+                    <td><input id="bridgeInfoEditWd" name="lttd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5,required:true" type="text" value="${bridgeInfo.lttd}"></td>
                 </tr>
             </table>
         </form>

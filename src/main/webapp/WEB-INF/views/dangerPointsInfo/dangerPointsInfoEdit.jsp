@@ -29,7 +29,7 @@
                 }
             }
         });
-        
+
        $('#dangerPointsInfoEditQy').combotree({
     	    url : '${path }/user/tree',
             parentField : 'pid',
@@ -42,7 +42,7 @@
         		$("#dangerPointsInfoEditZwQy").val(node.text);
         	}
         });
-        
+
     });
 </script>
 <div class="easyui-layout" data-options="fit:true,border:false">
@@ -56,7 +56,7 @@
                     <select id="dangerPointsInfoEditQy" name="dscd"  style="width: 260px; height: 29px;" class="easyui-validatebox" data-options="required:true"></select>
                     <input name="twn" id="dangerPointsInfoEditZwQy" type="hidden" value="${dangerPointsInfo.twn}" ></td>
                 </tr>
-                
+
 
 <tr>
     <td>村</td>
@@ -130,13 +130,13 @@
 </tr>
                 <tr>
                     <td>经度(°)</td>
-                    <td><input id="dangerPointsInfoEditJd" name="lgtd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5" type="text" value="${dangerPointsInfo.lgtd}"><a href="javascript:void(0);" class="easyui-linkbutton" data-options="iconCls:'fi-magnifying-glass',plain:true" onclick="selMap('dangerPointsInfoEditJd','dangerPointsInfoEditWd');">查看地图</a></td>
+                    <td><input id="dangerPointsInfoEditJd" name="lgtd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5,required:true" type="text" value="${dangerPointsInfo.lgtd}"><a href="javascript:void(0);" class="easyui-linkbutton" data-options="iconCls:'fi-magnifying-glass',plain:true" onclick="selMap('dangerPointsInfoEditJd','dangerPointsInfoEditWd');">查看地图</a></td>
                 </tr>
                 <tr>
                     <td>纬度(°)</td>
-                    <td><input id="dangerPointsInfoEditWd" name="lttd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5" type="text" value="${dangerPointsInfo.lttd}"></td>
+                    <td><input id="dangerPointsInfoEditWd" name="lttd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5,required:true" type="text" value="${dangerPointsInfo.lttd}"></td>
                 </tr>
-                
+
             </table>
         </form>
     </div>

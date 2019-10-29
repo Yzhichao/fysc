@@ -23,7 +23,7 @@
                 }
             }
         });
-        
+
        $('#difangInfoEditQy').combotree({
     	    url : '${path }/user/tree',
             parentField : 'pid',
@@ -33,7 +33,7 @@
             panelHeight : 300,
             value : '${difangInfo.dscd}'
         });
-        
+
     });
 </script>
 <div class="easyui-layout" data-options="fit:true,border:false">
@@ -49,19 +49,19 @@
                 </tr>
 <tr>
     <td>堤防名称</td>
-    <td><input name="dknm" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${difangInfo.dknm}"></td>
+    <td><input name="dknm" data-options="required:true" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${difangInfo.dknm}"></td>
 </tr><tr>
     <td>河流岸别</td>
-    <td><input name="rvbk" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${difangInfo.rvbk}"></td>
+    <td><input name="rvbk" data-options="required:true" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${difangInfo.rvbk}"></td>
 </tr><tr>
     <td>堤防跨界情况</td>
-    <td><input name="dkcr" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${difangInfo.dkcr}"></td>
+    <td><input name="dkcr" data-options="required:true" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${difangInfo.dkcr}"></td>
 </tr><tr>
     <td>堤防类型</td>
-    <td><input name="dktype" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${difangInfo.dktype}"></td>
+    <td><input name="dktype" data-options="required:true" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${difangInfo.dktype}"></td>
 </tr><tr>
     <td>堤防型式</td>
-    <td><input name="dktype1" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${difangInfo.dktype1}"></td>
+    <td><input name="dktype1" data-options="required:true" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${difangInfo.dktype1}"></td>
 </tr><tr>
     <td>工程状态</td>
     <td><input name="prst" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${difangInfo.prst}"></td>
@@ -91,20 +91,20 @@
     <td><input name="dktnm" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${difangInfo.dktnm}"></td>
 </tr><tr>
     <td>起x</td>
-    <td><input name="stlgtd" id="stlgtd" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${difangInfo.stlgtd}">
+    <td><input name="stlgtd" id="stlgtd" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${difangInfo.stlgtd}" data-options="min:0,precision:5,required:true">
     <a href="javascript:void(0);" class="easyui-linkbutton" data-options="iconCls:'fi-magnifying-glass',plain:true" onclick="selMap('stlgtd','stlttd');">查看地图</a>
     </td>
 </tr><tr>
     <td>起y</td>
-    <td><input name="stlttd" id="stlttd" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${difangInfo.stlttd}"></td>
+    <td><input name="stlttd" id="stlttd" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${difangInfo.stlttd}" data-options="min:0,precision:5,required:true"></td>
 </tr><tr>
     <td>终x</td>
-    <td><input name="endlgtd" id="endlgtd" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${difangInfo.endlgtd}">
+    <td><input name="endlgtd" id="endlgtd" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${difangInfo.endlgtd}" data-options="min:0,precision:5,required:true">
     <a href="javascript:void(0);" class="easyui-linkbutton" data-options="iconCls:'fi-magnifying-glass',plain:true" onclick="selMap('endlgtd','endlttd');">查看地图</a>
     </td>
 </tr><tr>
     <td>终y</td>
-    <td><input name="endlttd" id="endlttd" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${difangInfo.endlttd}"></td>
+    <td><input name="endlttd" id="endlttd" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${difangInfo.endlttd}" data-options="min:0,precision:5,required:true"></td>
 </tr>
             </table>
         </form>

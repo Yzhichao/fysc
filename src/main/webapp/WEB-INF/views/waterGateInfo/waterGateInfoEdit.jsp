@@ -29,7 +29,7 @@
                 }
             }
         });
-        
+
         $('#waterGateInfoEditQy').combotree({
             url : '${path }/user/tree',
             parentField : 'pid',
@@ -42,7 +42,7 @@
         		$("#waterGateInfoEditZwQy").val(node.text);
         	}
         });
-        
+
     });
 </script>
 <div class="easyui-layout" data-options="fit:true,border:false">
@@ -59,7 +59,7 @@
 
 <tr>
     <td>工程名称</td>
-    <td><input name="prnm" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${waterGateInfo.prnm}"></td>
+    <td><input name="prnm" data-options="required:true" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${waterGateInfo.prnm}"></td>
 </tr>
 <tr>
     <td>水资源三级分区</td>
@@ -79,15 +79,15 @@
 </tr>
 <tr>
     <td>工程等级</td>
-    <td><input name="prgrd" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${waterGateInfo.prgrd}"></td>
+    <td><input name="prgrd" data-options="required:true" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${waterGateInfo.prgrd}"></td>
 </tr>
 <tr>
     <td>闸孔数量(孔)</td>
-    <td><input name="holeNum" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${waterGateInfo.holeNum}"></td>
+    <td><input name="holeNum" data-options="required:true" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${waterGateInfo.holeNum}"></td>
 </tr>
 <tr>
     <td>闸孔总净宽(m)</td>
-    <td><input name="holeWid" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${waterGateInfo.holeWid}"></td>
+    <td><input name="holeWid" data-options="required:true" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${waterGateInfo.holeWid}"></td>
 </tr>
 <tr>
     <td>副闸闸孔数量(孔)</td>
@@ -147,13 +147,13 @@
 </tr>
                 <tr>
                     <td>经度(°)</td>
-                    <td><input id="waterGateInfoEditJd" name="lgtd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5" type="text" value="${waterGateInfo.lgtd}"><a href="javascript:void(0);" class="easyui-linkbutton" data-options="iconCls:'fi-magnifying-glass',plain:true" onclick="selMap('waterGateInfoEditJd','waterGateInfoEditWd');">查看地图</a></td>
+                    <td><input id="waterGateInfoEditJd" name="lgtd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5,required:true" type="text" value="${waterGateInfo.lgtd}"><a href="javascript:void(0);" class="easyui-linkbutton" data-options="iconCls:'fi-magnifying-glass',plain:true" onclick="selMap('waterGateInfoEditJd','waterGateInfoEditWd');">查看地图</a></td>
                 </tr>
                 <tr>
                     <td>纬度(°)</td>
-                    <td><input id="waterGateInfoEditWd" name="lttd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5" type="text" value="${waterGateInfo.lttd}"></td>
+                    <td><input id="waterGateInfoEditWd" name="lttd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5,required:true" type="text" value="${waterGateInfo.lttd}"></td>
                 </tr>
-               
+
             </table>
         </form>
     </div>
