@@ -50,22 +50,35 @@
                     	<input name="twn" id="yanbaInfoAddZwQy" type="hidden">
                     </td>
                 </tr>
-                <tr>
-                    <td>堰坝名称</td>
-                    <td><input name="wrName" style="height: 29px;width:260px;" class="easyui-textbox" type="text" data-options="required:true" ></td>
-                </tr>
-                <tr>
-                    <td>挡水坝类型</td>
-                    <td><input name="wrType" style="height: 29px;width:260px;" class="easyui-textbox" type="text" ></td>
-                </tr>
-                <tr>
-                    <td>容积(m3)</td>
-                    <td><input name="cp" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:2" type="text" ></td>
-                </tr>
-                <tr>
-                    <td>坝高(m)</td>
-                    <td><input name="damHight" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:2" type="text" ></td>
-                </tr>
+<!--                 <tr>
+				    <td>行政区名称</td>
+				    <td><input name="addvnm" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+				</tr>   -->              
+<tr>
+    <td>堰坝名称</td>
+    <td><input name="wrName" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>所在河道</td>
+    <td><input name="rv" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>堰坝类型</td>
+    <td><input name="wrType" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>容积（m^3)</td>
+    <td><input name="cp" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>坝高（m）</td>
+    <td><input name="damHight" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>备注</td>
+    <td><input name="comments" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+
                 <tr>
                     <td>经度(°)</td>
                     <td><input id="yanbaInfoAddJd" name="lgtd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5" type="text" ><a href="javascript:void(0);" class="easyui-linkbutton" data-options="iconCls:'fi-magnifying-glass',plain:true" onclick="selMap('yanbaInfoAddJd','yanbaInfoAddWd');">查看地图</a></td>
@@ -73,14 +86,6 @@
                 <tr>
                     <td>纬度(°)</td>
                     <td><input id="yanbaInfoAddWd" name="lttd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5" type="text" ></td>
-                </tr>
-                <tr>
-                    <td>备注</td>
-                    <td><input name="comments" style="height: 29px;width:260px;" class="easyui-textbox" type="text" ></td>
-                </tr>
-                <tr>
-                    <td>所在河道</td>
-                    <td><input name="rv" style="height: 29px;width:260px;" class="easyui-textbox" type="text" ></td>
                 </tr>
             </table>
         </form>

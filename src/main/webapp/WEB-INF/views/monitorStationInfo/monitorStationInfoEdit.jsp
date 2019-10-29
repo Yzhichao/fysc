@@ -52,51 +52,49 @@
             	<tr>
                     <td>所在镇（街）</td>
                     <td>
+                    <input name="id"  type="hidden"  value="${monitorStationInfo.id}">
                     <select id="monitorStationInfoEditQy" name="dscd"  style="width: 260px; height: 29px;" class="easyui-validatebox" data-options="required:true"></select>
                     <input name="twn" id="monitorStationInfoEditZwQy" type="hidden" value="${monitorStationInfo.twn}" ></td>
                 </tr>
+				<tr>
+				    <td>测站名称</td>
+				    <td><input name="stnm" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${monitorStationInfo.stnm}"></td>
+				</tr>
+				<tr>
+				    <td>测站编码</td>
+				    <td><input name="stcd" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${monitorStationInfo.stcd}"></td>
+				</tr>
+				<tr>
+				    <td>站址</td>
+				    <td><input name="add" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${monitorStationInfo.add}"></td>
+				</tr>
+				<tr>
+				    <td>所在河流</td>
+				    <td><input name="rv" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${monitorStationInfo.rv}"></td>
+				</tr>
+				<tr>
+				    <td>测站类型</td>
+				    <td><input name="stType" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${monitorStationInfo.stType}"></td>
+				</tr>
+				<tr>
+				    <td>建站时间</td>
+				    <td><input name="esdt" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${monitorStationInfo.esdt}"></td>
+				</tr>
+				<tr>
+				    <td>隶属单位</td>
+				    <td><input name="addc" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${monitorStationInfo.addc}"></td>
+				</tr>
+				<tr>
+				    <td>备注</td>
+				    <td><input name="commrnts" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${monitorStationInfo.commrnts}"></td>
+				</tr>
                 <tr>
-                    <td>测站名称</td>
-                    <td><input name="id"  type="hidden"  value="${monitorStationInfo.id}">
-                    <input name="stnm" style="height: 29px;width:260px;" class="easyui-textbox" type="text" data-options="required:true" value="${monitorStationInfo.stnm}"></td>
-                </tr>
-                <tr>
-                    <td>测站编码</td>
-                    <td><input name="stcd" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${monitorStationInfo.stcd}"></td>
-                </tr>
-                <tr>
-                    <td>所在河流</td>
-                    <td><input name="rv" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${monitorStationInfo.rv}"></td>
-                </tr>
-                <!-- 
-                <tr>
-                    <td>水系名称</td>
-                    <td><input name="sxmc" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value=""></td>
-                </tr>
-                 -->
-                <tr>
-                    <td>测站类型</td>
-                    <td><input name="stType" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${monitorStationInfo.stType}"></td>
-                </tr>
-                <tr>
-                    <td>建站年月</td>
-                    <td><input name="esdt" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${monitorStationInfo.esdt}"></td>
-                </tr>
-                <tr>
-                    <td>隶属单位</td>
-                    <td><input name="addc" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${monitorStationInfo.addc}"></td>
-                </tr>
-                <tr>
-                    <td>经度</td>
+                    <td>经度(°)</td>
                     <td><input id="monitorStationInfoEditJd" name="lgtd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5" type="text" value="${monitorStationInfo.lgtd}"><a href="javascript:void(0);" class="easyui-linkbutton" data-options="iconCls:'fi-magnifying-glass',plain:true" onclick="selMap('monitorStationInfoEditJd','monitorStationInfoEditWd');">查看地图</a></td>
                 </tr>
                 <tr>
-                    <td>纬度</td>
+                    <td>纬度(°)</td>
                     <td><input id="monitorStationInfoEditWd" name="lttd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5" type="text" value="${monitorStationInfo.lttd}"></td>
-                </tr>
-                <tr>
-                    <td>备注</td>
-                    <td><input name="commrnts" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${monitorStationInfo.commrnts}"></td>
                 </tr>
             </table>
         </form>

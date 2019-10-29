@@ -21,62 +21,74 @@ var ttt=6;
             field : 'ID',
             ssortable : true,
             hidden : true
-        },{
-            width : '160',
-            title : '桥梁名称',
-            field : 'BR_NAME',
-            sortable : true
-        },{
-            width : '260',
-            title : '位置',
-            field : 'ADDVNM',
-            sortable : true
-        },{
-            width : '160',
-            title : '所在镇（街）',
-            field : 'TWN',
-            sortable : true
-        },{
-            width : '80',
-            title : '所在河流',
-            field : 'RV',
-            sortable : true
-        },{
-            width : '80',
-            title : '桥长(m)',
-            field : 'BR_LEN',
-            sortable : true
-        },{
-            width : '80',
-            title : '桥宽(m)',
-            field : 'BR_WID',
-            sortable : true
-        },{
-            width : '80',
-            title : '桥高(m)',
-            field : 'BR_HIGHT',
-            sortable : true
-        },{
-            width : '80',
-            title : '类型',
-            field : 'BR_TYPE',
-            sortable : true
-        },{
-            width : '80',
-            title : '经度',
-            field : 'LGTD',
-            sortable : true
-        },{
-            width : '80',
-            title : '纬度',
-            field : 'LTTD',
-            sortable : true
-        },{
-            width : '160',
-            title : '备注',
-            field : 'COMMENTS',
-            sortable : true
-        }, {
+        },
+		{
+		    width : '120',
+		    title : '镇',
+		    field : 'TWN',
+		    sortable : true
+		}
+		/* 		
+		,{
+		    width : '120',
+		    title : '行政编码',
+		    field : 'ADDVCD',
+		    sortable : true
+		}
+		 
+		,{
+		    width : '120',
+		    title : '行政区名称',
+		    field : 'ADDVNM',
+		    sortable : true
+		}
+		*/
+		,{
+		    width : '120',
+		    title : '桥梁名称',
+		    field : 'BR_NAME',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '所在河道',
+		    field : 'RV',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '桥长(m)',
+		    field : 'BR_LEN',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '桥宽(m)',
+		    field : 'BR_WID',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '桥高(m)',
+		    field : 'BR_HIGHT',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '桥梁类型',
+		    field : 'BR_TYPE',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '经度(°)',
+		    field : 'LGTD',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '纬度(°)',
+		    field : 'LTTD',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '备注',
+		    field : 'COMMENTS',
+		    sortable : true
+		},{
             field : 'action',
             title : '操作',
             width : 200,
@@ -203,7 +215,7 @@ function bridgeInfoSearchFun() {
         <form id="bridgeInfoSearchForm">
             <table>
                 <tr>
-                	<th style="width:32px;">区域:</th>
+                	<th style="width:41px;">区域:</th>
 	                <td><select id="bridgeInfoQy" name="dscd" style="width: 143px; height: 22px;"></select></td>
                     <th>桥梁名称:</th>
                     <td><input name="brName" class="easyui-textbox" /></td>

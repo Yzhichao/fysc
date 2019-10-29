@@ -38,15 +38,9 @@
     });
 </script>
 <div class="easyui-layout" data-options="fit:true,border:false" >
-    <div data-options="region:'center',border:false" style="overflow: hidden;padding: 3px;" >
+    <div data-options="region:'center',border:false" style="padding: 3px;" >
         <form id="waterGateInfoAddForm" method="post">
             <table class="grid">
-                
-                <tr>
-                    <td>水闸名称</td>
-                    <td><input name="id"  type="hidden"  value="${waterGateInfo.id}">
-                    <input name="prnm" style="height: 29px;width:260px;" class="easyui-textbox" type="text" data-options="required:true" ></td>
-                </tr>
                 <tr>
                     <td>所在镇（街）</td>
                     <td>
@@ -54,44 +48,101 @@
                     	<input name="twn" id="waterGateInfoAddZwQy" type="hidden">
                     </td>
                 </tr>
-                <!-- 
+<tr>
+    <td>工程名称</td>
+    <td><input name="prnm" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>水资源三级分区</td>
+    <td><input name="tldwr" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>是否为闸站工程</td>
+    <td><input name="gs" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>是否为套闸工程</td>
+    <td><input name="ss" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>工程状态</td>
+    <td><input name="prst" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>工程等级</td>
+    <td><input name="prgrd" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>闸孔数量(孔)</td>
+    <td><input name="holeNum" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>闸孔总净宽(m)</td>
+    <td><input name="holeWid" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>副闸闸孔数量(孔)</td>
+    <td><input name="axHoleNum" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>闸孔总净宽(m)</td>
+    <td><input name="axHoleWid" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>水闸类型</td>
+    <td><input name="gateType" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>分洪闸过闸流量(m³/s)</td>
+    <td><input name="fdsq" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>节制闸过闸流量</td>
+    <td><input name="cgq" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>排水闸过闸流量</td>
+    <td><input name="dsq" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>挡潮闸过闸流量</td>
+    <td><input name="tbq" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>橡胶坝坝高</td>
+    <td><input name="rdh" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>橡胶坝坝长</td>
+    <td><input name="rdl" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>归口管理部门代码</td>
+    <td><input name="cadcd" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>管理单位编码</td>
+    <td><input name="adcd" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>是否划界</td>
+    <td><input name="ds" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>是否确权</td>
+    <td><input name="dt" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>管理单位名称</td>
+    <td><input name="adnm" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+
                 <tr>
-                    <td>所在河流</td>
-                    <td><input name="szhl" style="height: 29px;width:260px;" class="easyui-textbox" type="text" ></td>
-                </tr>
-                 -->
-                <tr>
-                    <td>类型</td>
-                    <td><input name="gateType" style="height: 29px;width:260px;" class="easyui-textbox" type="text" ></td>
-                </tr>
-                <tr>
-                    <td>闸孔数</td>
-                    <td><input name="holeNum" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0" type="text" ></td>
-                </tr>
-                <tr>
-                    <td>闸孔总净宽(m)</td>
-                    <td><input name="holeWid" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:2" type="text" ></td>
-                </tr>
-                <tr>
-                    <td>过闸流量(m3/s)</td>
-                    <td><input name="fdsq" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:2" type="text" ></td>
-                </tr>
-                <!-- 
-                <tr>
-                    <td>备注</td>
-                    <td><input name="bz" style="height: 29px;width:260px;" class="easyui-textbox" type="text" ></td>
-                </tr>
-                 -->
-                <tr>
-                    <td>工程等级</td>
-                    <td><input name="prgrd" style="height: 29px;width:260px;" class="easyui-textbox" type="text" ></td>
-                </tr>
-                <tr>
-                    <td>经度</td>
+                    <td>经度(°)</td>
                     <td><input id="waterGateInfoAddJd" name="lgtd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5" type="text" ><a href="javascript:void(0);" class="easyui-linkbutton" data-options="iconCls:'fi-magnifying-glass',plain:true" onclick="selMap('waterGateInfoAddJd','waterGateInfoAddWd');">查看地图</a></td>
                 </tr>
                 <tr>
-                    <td>纬度</td>
+                    <td>纬度(°)</td>
                     <td><input id="waterGateInfoAddWd" name="lttd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5" type="text" ></td>
                 </tr>
             </table>

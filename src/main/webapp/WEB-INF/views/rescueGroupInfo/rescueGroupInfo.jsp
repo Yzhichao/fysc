@@ -21,56 +21,61 @@
             ssortable : true,
             hidden : true
         },{
-            width : '230',
-            title : '名称',
-            field : 'NAME',
-            sortable : true
-        },{
-            width : '160',
-            title : '所在镇（街）',
-            field : 'TWN',
-            sortable : true
-        },{
-            width : '80',
-            title : '人数',
-            field : 'PP',
-            sortable : true
-        },{
-            width : '180',
-            title : '所属部门或单位',
-            field : 'AD',
-            sortable : true
-        },{
-            width : '80',
-            title : '负责人',
-            field : 'HEAD',
-            sortable : true
-        },{
-            width : '160',
-            title : '负责人联系方式',
-            field : 'TELL',
-            sortable : true
-        },{
-            width : '180',
-            title : '为民间抢险队的标注“是”',
-            field : 'FOLK',
-            sortable : true
-        },{
-            width : '100',
-            title : '经度',
-            field : 'LGTD',
-            sortable : true
-        },{
-            width : '100',
-            title : '纬度',
-            field : 'LTTD',
-            sortable : true
-        },{
-            width : '160',
-            title : '备注',
-            field : 'COMMENTS',
-            sortable : true
-        }, {
+    width : '120',
+    title : '名称',
+    field : 'NAME',
+    sortable : true
+},{
+    width : '120',
+    title : '经度(°)',
+    field : 'LGTD',
+    sortable : true
+},{
+    width : '120',
+    title : '纬度(°)',
+    field : 'LTTD',
+    sortable : true
+},{
+    width : '120',
+    title : '人数',
+    field : 'PP',
+    sortable : true
+},{
+    width : '120',
+    title : '所属部门',
+    field : 'AD',
+    sortable : true
+},{
+    width : '120',
+    title : '负责人',
+    field : 'HEAD',
+    sortable : true
+},{
+    width : '120',
+    title : '联系电话',
+    field : 'TELL',
+    sortable : true
+},{
+    width : '120',
+    title : '为民间',
+    field : 'FOLK',
+    sortable : true
+},{
+    width : '120',
+    title : '备注',
+    field : 'COMMENTS',
+    sortable : true
+},{
+    width : '120',
+    title : '镇名',
+    field : 'TWN',
+    sortable : true
+},{
+    width : '120',
+    title : '队伍级别',
+    field : 'TR_GRD',
+    sortable : true
+},{
             field : 'action',
             title : '操作',
             width : 200,

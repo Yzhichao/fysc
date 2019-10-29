@@ -20,52 +20,54 @@
             field : 'ID',
             ssortable : true,
             hidden : true
-        },{
-            width : '200',
-            title : '堰坝名称',
-            field : 'WR_NAME',
-            sortable : true
-        },{
-            width : '250',
-            title : '行政区',
-            field : 'dsvb',
-            sortable : true
-        },{
-            width : '80',
-            title : '挡水坝类型',
-            field : 'WR_TYPE',
-            sortable : true
-        },{
-            width : '80',
-            title : '容积(m3)',
-            field : 'CP',
-            sortable : true
-        },{
-            width : '80',
-            title : '坝高(m)',
-            field : 'DAM_HIGHT',
-            sortable : true
-        },{
-            width : '80',
-            title : '经度(°)',
-            field : 'LGTD',
-            sortable : true
-        },{
-            width : '80',
-            title : '纬度(°)',
-            field : 'LTTD',
-            sortable : true
-        },{
-            width : '160',
-            title : '备注',
-            field : 'COMMENTS',
-            sortable : true
-        },{
-            width : '80',
-            title : '所在河道',
-            field : 'RV',
-            sortable : true
-        }, {
+        },
+{
+    width : '120',
+    title : '镇',
+    field : 'TWN',
+    sortable : true
+},{
+    width : '120',
+    title : '堰坝名称',
+    field : 'WR_NAME',
+    sortable : true
+},{
+    width : '120',
+    title : '所在河道',
+    field : 'RV',
+    sortable : true
+},{
+    width : '120',
+    title : '堰坝类型',
+    field : 'WR_TYPE',
+    sortable : true
+},{
+    width : '120',
+    title : '容积容积（m^3)',
+    field : 'CP',
+    sortable : true
+},{
+    width : '120',
+    title : '坝高（m）',
+    field : 'DAM_HIGHT',
+    sortable : true
+},{
+    width : '120',
+    title : '经度(°)',
+    field : 'LGTD',
+    sortable : true
+},{
+    width : '120',
+    title : '纬度(°)',
+    field : 'LTTD',
+    sortable : true
+},{
+    width : '120',
+    title : '备注',
+    field : 'COMMENTS',
+    sortable : true
+},
+{
             field : 'action',
             title : '操作',
             width : 200,

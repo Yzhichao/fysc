@@ -52,33 +52,36 @@
             	<tr>
                     <td>所在镇（街）</td>
                     <td>
+                    <input name="id"  type="hidden"  value="${goodsRepository.id}">
                     <select id="goodsRepositoryEditQy" name="dscd"  style="width: 260px; height: 29px;" class="easyui-validatebox" data-options="required:true"></select>
                     <input name="twn" id="goodsRepositoryEditZwQy" type="hidden" value="${goodsRepository.twn}" ></td>
                 </tr>
+				<tr>
+				    <td>名称</td>
+				    <td><input name="name" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${goodsRepository.name}"></td>
+				</tr><tr>
+				    <td>负责人</td>
+				    <td><input name="head" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${goodsRepository.head}"></td>
+				</tr><tr>
+				    <td>联系电话</td>
+				    <td><input name="tell" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${goodsRepository.tell}"></td>
+				</tr><tr>
+				    <td>仓库级别</td>
+				    <td><input name="wrGrd" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${goodsRepository.wrGrd}"></td>
+				</tr><tr>
+				    <td>位置</td>
+				    <td><input name="add" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${goodsRepository.add}"></td>
+				</tr><tr>
+				    <td>备注</td>
+				    <td><input name="comments" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${goodsRepository.comments}"></td>
+				</tr>
                 <tr>
-                    <td>名称</td>
-                    <td><input name="id"  type="hidden"  value="${goodsRepository.id}">
-                    <input name="name" style="height: 29px;width:260px;" class="easyui-textbox" type="text" data-options="required:true" value="${goodsRepository.name}"></td>
-                </tr>
-                <tr>
-                    <td>联系人</td>
-                    <td><input name="head" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${goodsRepository.head}"></td>
-                </tr>
-                <tr>
-                    <td>联系方式</td>
-                    <td><input name=tell style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${goodsRepository.tell}"></td>
-                </tr>
-                <tr>
-                    <td>经度</td>
+                    <td>经度(°)</td>
                     <td><input id="goodsRepositoryEditJd" name="lgtd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5" type="text" value="${goodsRepository.lgtd}"><a href="javascript:void(0);" class="easyui-linkbutton" data-options="iconCls:'fi-magnifying-glass',plain:true" onclick="selMap('goodsRepositoryEditJd','goodsRepositoryEditWd');">查看地图</a></td>
                 </tr>
                 <tr>
-                    <td>纬度</td>
+                    <td>纬度(°)</td>
                     <td><input id="goodsRepositoryEditWd" name="lttd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5" type="text" value="${goodsRepository.lttd}"></td>
-                </tr>
-                <tr>
-                    <td>备注</td>
-                    <td><input name="comments" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${goodsRepository.comments}"></td>
                 </tr>
             </table>
         </form>

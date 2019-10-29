@@ -20,60 +20,84 @@
             field : 'ID',
             ssortable : true,
             hidden : true
-        },{
-            width : '230',
-            title : '电站名称',
-            field : 'NAME',
-            sortable : true
-        },{
-            width : '160',
-            title : '所在镇（街）',
-            field : 'TWN',
-            sortable : true
-        },{
-            width : '120',
-            title : '类型',
-            field : 'PTYPE',
-            sortable : true
-        },{
-            width : '80',
-            title : '工程等级',
-            field : 'PRGRD',
-            sortable : true
-        },{
-            width : '80',
-            title : '装机容量(kW)',
-            field : 'IC',
-            sortable : true
-        },{
-            width : '80',
-            title : '机组台数(台)',
-            field : 'UT',
-            sortable : true
-        },{
-            width : '200',
-            title : '管理单位名称',
-            field : 'ADNM',
-            sortable : true
         },
-        /* 
-        {
-            width : '160',
-            title : '备注',
-            field : 'bz',
-            sortable : true
-        },{
-            width : '80',
-            title : '经度',
-            field : 'jd',
-            sortable : true
-        },{
-            width : '80',
-            title : '纬度',
-            field : 'wd',
-            sortable : true
-        }, 
-         */
+{
+    width : '120',
+    title : '工程名称',
+    field : 'NAME',
+    sortable : true
+},{
+    width : '120',
+    title : '水资源三级分区',
+    field : 'TLDWR',
+    sortable : true
+},{
+    width : '120',
+    title : '水电站类型',
+    field : 'PTYPE',
+    sortable : true
+},{
+    width : '120',
+    title : '工程状态',
+    field : 'PRST',
+    sortable : true
+},{
+    width : '120',
+    title : '工程等级',
+    field : 'PRGRD',
+    sortable : true
+},{
+    width : '120',
+    title : '装机容量(kW)',
+    field : 'IC',
+    sortable : true
+},{
+    width : '120',
+    title : '保证出力(kW)',
+    field : 'FP',
+    sortable : true
+},{
+    width : '120',
+    title : '额定水头(m)',
+    field : 'RH',
+    sortable : true
+},{
+    width : '120',
+    title : '机组台数(台)',
+    field : 'UT',
+    sortable : true
+},{
+    width : '120',
+    title : '多年平均发电量(万kW•h)',
+    field : 'AAEO',
+    sortable : true
+},{
+    width : '120',
+    title : '管理单位名称',
+    field : 'ADNM',
+    sortable : true
+},{
+    width : '120',
+    title : '归口管理单位代码',
+    field : 'CADCD',
+    sortable : true
+},{
+    width : '120',
+    title : '是否划界',
+    field : 'DS',
+    sortable : true
+},{
+    width : '120',
+    title : '是否确权',
+    field : 'DT',
+    sortable : true
+},{
+    width : '120',
+    title : '所在镇',
+    field : 'TWN',
+    sortable : true
+},
+
         {
             field : 'action',
             title : '操作',

@@ -6,9 +6,9 @@
 
 <select id="selectPageNew" resultType="java.util.HashMap">
         SELECT 
-        b.*,a.dsvb
+        b.* 
         FROM 
-        yanba_info b left join sys_dscdnm_b a on b.dscd=a.dscd where delflag is null   
+        yanba_info b where delflag is null   
       
             <if test=" wrName != null and wrName != '' ">
                  and b.WR_NAME like concat('%',#{wrName},'%')

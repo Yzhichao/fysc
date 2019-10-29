@@ -50,45 +50,54 @@
                     	<input name="twn" id="bridgeInfoAddZwQy" type="hidden">
                     </td>
                 </tr>
+
+<!-- <tr>
+    <td>行政编码</td>
+    <td><input name="addvcd" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>行政区名称</td>
+    <td><input name="addvnm" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+ -->
+<tr>
+    <td>桥梁名称</td>
+    <td><input name="brName" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>所在河道</td>
+    <td><input name="rv" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>桥长(m)</td>
+    <td><input name="brLen" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>桥宽(m)</td>
+    <td><input name="brWid" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>桥高(m)</td>
+    <td><input name="brHight" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>桥梁类型</td>
+    <td><input name="brType" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>备注</td>
+    <td><input name="comments" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+
+                
+                
                 <tr>
-                    <td>位置</td>
-                    <td><input name=addvnm style="height: 29px;width:260px;" class="easyui-textbox" type="text" data-options="required:true" ></td>
-                </tr>
-                <tr>
-                    <td>桥梁名称</td>
-                    <td><input name="brName" style="height: 29px;width:260px;" class="easyui-textbox" type="text" data-options="required:true" ></td>
-                </tr>
-                <tr>
-                    <td>所在河流</td>
-                    <td><input name="rv" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
-                </tr>
-                <tr>
-                    <td>桥长(m)</td>
-                    <td><input name="brLen" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:2" type="text" ></td>
-                </tr>
-                <tr>
-                    <td>桥宽(m)</td>
-                    <td><input name="brWid" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:2" type="text" ></td>
-                </tr>
-                <tr>
-                    <td>桥高(m)</td>
-                    <td><input name="brHight" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:2" type="text" ></td>
-                </tr>
-                <tr>
-                    <td>类型</td>
-                    <td><input name="brType" style="height: 29px;width:260px;" class="easyui-textbox" type="text" ></td>
-                </tr>
-                <tr>
-                    <td>经度</td>
+                    <td>经度(°)</td>
                     <td><input id="bridgeInfoAddJd" name="lgtd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5" type="text" ><a href="javascript:void(0);" class="easyui-linkbutton" data-options="iconCls:'fi-magnifying-glass',plain:true" onclick="selMap('bridgeInfoAddJd','bridgeInfoAddWd');">查看地图</a></td>
                 </tr>
                 <tr>
-                    <td>纬度</td>
+                    <td>纬度(°)</td>
                     <td><input id="bridgeInfoAddWd" name="lttd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5" type="text"></td>
-                </tr>
-                <tr>
-                    <td>备注</td>
-                    <td><input name="comments" style="height: 29px;width:260px;" class="easyui-textbox" type="text" ></td>
                 </tr>
             </table>
         </form>

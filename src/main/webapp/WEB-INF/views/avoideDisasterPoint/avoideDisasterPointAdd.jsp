@@ -40,7 +40,7 @@
    
 </script>
 <div class="easyui-layout" data-options="fit:true,border:false" >
-    <div data-options="region:'center',border:false" style="overflow: hidden;padding: 3px;" >
+    <div data-options="region:'center',border:false" style="padding: 3px;" >
         <form id="avoideDisasterPointAddForm" method="post">
             <table class="grid">
                 <tr>
@@ -50,39 +50,107 @@
                     	<input name="twn" id="avoideDisasterPointAddZwQy" type="hidden">
                     </td>
                 </tr>
-                <tr>
-                    <td>位置</td>
-                    <td><input name="id"  type="hidden"  value="${avoideDisasterPoint.id}">
-                    <input name="add" style="height: 29px;width:260px;" class="easyui-textbox" type="text" data-options="required:true" ></td>
-                </tr>
-                <tr>
-                    <td>名称</td>
-                    <td><input name="name" style="height: 29px;width:260px;" class="easyui-textbox" type="text" data-options="required:true" ></td>
-                </tr>
-                <tr>
-                    <td>占地面积(m2)</td>
-                    <td><input name="area" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:2" type="text" ></td>
-                </tr>
-                <tr>
-                    <td>容纳人数</td>
-                    <td><input name="atcp" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0" type="text"></td>
-                </tr>
-                <tr>
-                    <td>场所等级</td>
-                    <td><input name="shGrd" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
-                </tr>
+
+<tr>
+    <td>名称</td>
+    <td><input name="name" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>位置</td>
+    <td><input name="add" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>占地面积(m2)</td>
+    <td><input name="area" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>容纳人数</td>
+    <td><input name="atcp" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>庇护场所等级</td>
+    <td><input name="shGrd" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>备注</td>
+    <td><input name="comments" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<!-- 
+<tr>
+    <td>市</td>
+    <td><input name="cty" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>县区</td>
+    <td><input name="cnt" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+-->
+ <tr>
+    <td>社区村</td>
+    <td><input name="vl" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>庇护场所类型</td>
+    <td><input name="shType" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>管理单位</td>
+    <td><input name="addp" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>服务半径</td>
+    <td><input name="inSrr" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>避护场所有效面积（平方米）</td>
+    <td><input name="inShEfarea" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>避护场所容纳人数（人）</td>
+    <td><input name="inShAtcp" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>是否设置应急避护场所标识系统</td>
+    <td><input name="inShmr" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>人均有效避护面积（平方米）</td>
+    <td><input name="inPcShArea" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>服务半径（米）</td>
+    <td><input name="outSrr" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>避护场所建筑面积（平方米）</td>
+    <td><input name="outShEfarea" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>避护场所容纳人数（人）</td>
+    <td><input name="outShAtcp" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>是否设置应急避护场所标识系统</td>
+    <td><input name="outShmr" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>人均建筑面积（平方米）</td>
+    <td><input name="outPcSharea" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+
+
                 <tr>
                     <td>经度</td>
-                    <td><input id="avoideDisasterPointAddJd" name="lgtd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5" type="text" ><a href="javascript:void(0);" class="easyui-linkbutton" data-options="iconCls:'fi-magnifying-glass',plain:true" onclick="selMap('avoideDisasterPointAddJd','avoideDisasterPointAddWd');">查看地图</a></td>
+                    <td><input id="avoideDisasterPointAddJd" name="lgtd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5" type="text" >
+                    <a href="javascript:void(0);" class="easyui-linkbutton" data-options="iconCls:'fi-magnifying-glass',plain:true" onclick="selMap('avoideDisasterPointAddJd','avoideDisasterPointAddWd');">查看地图</a>
+                    </td>
                 </tr>
                 <tr>
                     <td>纬度</td>
                     <td><input id="avoideDisasterPointAddWd" name="lttd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5" type="text" ></td>
                 </tr>
-                <tr>
-                    <td>备注</td>
-                    <td><input name="comments" style="height: 29px;width:260px;" class="easyui-textbox" type="text" ></td>
-                </tr>
+
+
             </table>
         </form>
     </div>

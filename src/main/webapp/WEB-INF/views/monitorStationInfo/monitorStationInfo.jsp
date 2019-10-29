@@ -21,65 +21,61 @@
             ssortable : true,
             hidden : true
         },{
-            width : '160',
-            title : '测站名称',
-            field : 'STNM',
-            sortable : true
-        },{
-            width : '230',
-            title : '所在镇（街）',
-            field : 'TWN',
-            sortable : true
-        },{
-            width : '120',
-            title : '测站编码',
-            field : 'STCD',
-            sortable : true
-        },{
-            width : '120',
-            title : '所在河流',
-            field : 'RV',
-            sortable : true
-        },
-        /* 
-        {
-            width : '80',
-            title : '水系名称',
-            field : 'sxmc',
-            sortable : true
-        },
-         */
-        {
-            width : '80',
-            title : '测站类型',
-            field : 'ST_TYPE',
-            sortable : true
-        },{
-            width : '80',
-            title : '建站年月',
-            field : 'ESDT',
-            sortable : true
-        },{
-            width : '180',
-            title : '隶属单位',
-            field : 'ADDC',
-            sortable : true
-        },{
-            width : '80',
-            title : '经度',
-            field : 'LGTD',
-            sortable : true
-        },{
-            width : '80',
-            title : '纬度',
-            field : 'LTTD',
-            sortable : true
-        },{
-            width : '160',
-            title : '备注',
-            field : 'COMMRNTS',
-            sortable : true
-        }, {
+		    width : '120',
+		    title : '测站名称',
+		    field : 'STNM',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '测站编码',
+		    field : 'STCD',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '所在镇（街）',
+		    field : 'TWN',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '站址',
+		    field : 'ADD',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '所在河流',
+		    field : 'RV',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '测站类型',
+		    field : 'ST_TYPE',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '建站时间',
+		    field : 'ESDT',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '隶属单位',
+		    field : 'ADDC',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '备注',
+		    field : 'COMMRNTS',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '经度(°)',
+		    field : 'LGTD',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '纬度(°)',
+		    field : 'LTTD',
+		    sortable : true
+		},{
             field : 'action',
             title : '操作',
             width : 200,

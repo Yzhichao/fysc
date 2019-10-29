@@ -21,55 +21,59 @@
             ssortable : true,
             hidden : true
         },{
-            width : '160',
-            title : '涵洞名称',
-            field : 'HOLE_NAME',
-            sortable : true
-        },{
-            width : '280',
-            title : '位置',
-            field : 'ADDVNM',
-            sortable : true
-        },{
-            width : '160',
-            title : '所在镇（街）',
-            field : 'TWN',
-            sortable : true
-        },{
-            width : '80',
-            title : '类型',
-            field : 'HOLE_TYPE',
-            sortable : true
-        },{
-            width : '80',
-            title : '洞身高(m)',
-            field : 'HOLE_HIGHT',
-            sortable : true
-        },{
-            width : '110',
-            title : '洞身宽或直径(m)',
-            field : 'HOLE_WID',
-            sortable : true
-        },{
-            width : '80',
-            title : '经度',
-            field : 'LGTD',
-            sortable : true
-        },{
-            width : '80',
-            title : '纬度',
-            field : 'LTTD',
-            sortable : true
-        }
-        /* 
-        ,{
-            width : '160',
-            title : '备注',
-            field : 'bz',
-            sortable : true
-        }
-         */
-        ,{
+		    width : '120',
+		    title : '镇',
+		    field : 'TWN',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '村',
+		    field : 'VL',
+		    sortable : true
+		},
+/* 		{
+		    width : '120',
+		    title : '行政区代码',
+		    field : 'ADDVCD',
+		    sortable : true
+		}, */
+		{
+		    width : '120',
+		    title : '行政区名称',
+		    field : 'ADDVNM',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '涵洞名称',
+		    field : 'HOLE_NAME',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '涵洞类型',
+		    field : 'HOLE_TYPE',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '洞身高（m）',
+		    field : 'HOLE_HIGHT',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '洞身宽或直径（m）',
+		    field : 'HOLE_WID',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '经度(°)',
+		    field : 'LGTD',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '纬度(°)',
+		    field : 'LTTD',
+		    sortable : true
+		},
+        {
             field : 'action',
             title : '操作',
             width : 200,

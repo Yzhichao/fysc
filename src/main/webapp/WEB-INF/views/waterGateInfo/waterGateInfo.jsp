@@ -21,64 +21,132 @@
             ssortable : true,
             hidden : true
         },{
-            width : '200',
-            title : '水闸名称',
-            field : 'PRNM',
-            sortable : true
-        },{
-            width : '160',
-            title : '所在镇（街）',
-            field : 'TWN',
-            sortable : true
-        },
-        /* 
-        {
-            width : '80',
-            title : '所在河流',
-            field : 'szhl',
-            sortable : true
-        },
-         */
-        {
-            width : '80',
-            title : '类型',
-            field : 'GATE_TYPE',
-            sortable : true
-        },{
-            width : '80',
-            title : '闸孔数',
-            field : 'HOLE_NUM',
-            sortable : true
-        },{
-            width : '120',
-            title : '过闸流量(m3/s)',
-            field : 'FDSQ',
-            sortable : true
-        },
-        /* 
-        {
-            width : '200',
-            title : '备注',
-            field : 'bz',
-            sortable : true
-        },
-         */
-        {
-            width : '80',
-            title : '工程等级',
-            field : 'PRGRD',
-            sortable : true
-        },{
-            width : '80',
-            title : '经度',
-            field : 'LGTD',
-            sortable : true
-        },{
-            width : '80',
-            title : '纬度',
-            field : 'LTTD',
-            sortable : true
-        }, {
+    width : '120',
+    title : '工程名称',
+    field : 'PRNM',
+    sortable : true
+},{
+    width : '120',
+    title : '水资源三级分区',
+    field : 'TLDWR',
+    sortable : true
+},{
+    width : '120',
+    title : '是否为闸站工程',
+    field : 'GS',
+    sortable : true
+},{
+    width : '120',
+    title : '是否为套闸工程',
+    field : 'SS',
+    sortable : true
+},{
+    width : '120',
+    title : '工程状态',
+    field : 'PRST',
+    sortable : true
+},{
+    width : '120',
+    title : '工程等级',
+    field : 'PRGRD',
+    sortable : true
+},{
+    width : '120',
+    title : '闸孔数量(孔)',
+    field : 'HOLE_NUM',
+    sortable : true
+},{
+    width : '120',
+    title : '闸孔总净宽(m)',
+    field : 'HOLE_WID',
+    sortable : true
+},{
+    width : '120',
+    title : '副闸闸孔数量(孔)',
+    field : 'AX_HOLE_NUM',
+    sortable : true
+},{
+    width : '120',
+    title : '闸孔总净宽(m)',
+    field : 'AX_HOLE_WID',
+    sortable : true
+},{
+    width : '120',
+    title : '水闸类型',
+    field : 'GATE_TYPE',
+    sortable : true
+},{
+    width : '120',
+    title : '分洪闸过闸流量(m³/s)',
+    field : 'FDSQ',
+    sortable : true
+},{
+    width : '120',
+    title : '节制闸过闸流量',
+    field : 'CGQ',
+    sortable : true
+},{
+    width : '120',
+    title : '排水闸过闸流量',
+    field : 'DSQ',
+    sortable : true
+},{
+    width : '120',
+    title : '挡潮闸过闸流量',
+    field : 'TBQ',
+    sortable : true
+},{
+    width : '120',
+    title : '橡胶坝坝高',
+    field : 'RDH',
+    sortable : true
+},{
+    width : '120',
+    title : '橡胶坝坝长',
+    field : 'RDL',
+    sortable : true
+},{
+    width : '120',
+    title : '归口管理部门代码',
+    field : 'CADCD',
+    sortable : true
+},{
+    width : '120',
+    title : '管理单位编码',
+    field : 'ADCD',
+    sortable : true
+},{
+    width : '120',
+    title : '是否划界',
+    field : 'DS',
+    sortable : true
+},{
+    width : '120',
+    title : '是否确权',
+    field : 'DT',
+    sortable : true
+},{
+    width : '120',
+    title : '管理单位名称',
+    field : 'ADNM',
+    sortable : true
+},{
+    width : '120',
+    title : '镇（街）',
+    field : 'TWN',
+    sortable : true
+},{
+    width : '120',
+    title : '经度(°)',
+    field : 'LGTD',
+    sortable : true
+},{
+    width : '120',
+    title : '纬度(°)',
+    field : 'LTTD',
+    sortable : true
+},
+{
             field : 'action',
             title : '操作',
             width : 200,

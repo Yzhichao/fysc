@@ -15,57 +15,136 @@
         pageSize : 20,
         pageList : [ 10, 20, 30, 40, 50, 100, 200, 300, 400, 500],
         columns : [ [ {
-            width : '60',
-            title : '编号',
-            field : 'ID',
-            ssortable : true,
-            hidden : true
-        },{
-            width : '260',
-            title : '名称',
-            field : 'NAME',
-            sortable : true
-        },{
-            width : '160',
-            title : '所在镇（街）',
-            field : 'TWN',
-            sortable : true
-        },{
-            width : '260',
-            title : '位置',
-            field : 'ADD',
-            sortable : true
-        },{
-            width : '80',
-            title : '占地面积(m2)',
-            field : 'AREA',
-            sortable : true
-        },{
-            width : '80',
-            title : '容纳人数',
-            field : 'ATCP',
-            sortable : true
-        },{
-            width : '80',
-            title : '场所等级',
-            field : 'SH_GRD',
-            sortable : true
-        },{
-            width : '100',
-            title : '经度',
-            field : 'LGTD',
-            sortable : true
-        },{
-            width : '100',
-            title : '纬度',
-            field : 'LTTD',
-            sortable : true
-        },{
-            width : '160',
-            title : '备注',
-            field : 'COMMENTS',
-            sortable : true
-        }, {
+		    width : '260',
+		    title : 'ID',
+		    field : 'ID',
+		    sortable : true,
+		    hidden : true
+		},{
+		    width : '200',
+		    title : '名称',
+		    field : 'NAME',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '位置',
+		    field : 'ADD',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '占地面积(m2)',
+		    field : 'AREA',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '容纳人数',
+		    field : 'ATCP',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '庇护场所等级',
+		    field : 'SH_GRD',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '备注',
+		    field : 'COMMENTS',
+		    sortable : true
+		},
+		/* 
+		{
+		    width : '120',
+		    title : '市',
+		    field : 'CTY',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '县区',
+		    field : 'CNT',
+		    sortable : true
+		},
+		 */
+		{
+		    width : '120',
+		    title : '乡镇',
+		    field : 'TWN',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '社区村',
+		    field : 'VL',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '庇护场所类型',
+		    field : 'SH_TYPE',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '管理单位',
+		    field : 'ADDP',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '经度',
+		    field : 'LGTD',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '纬度',
+		    field : 'LTTD',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '服务半径',
+		    field : 'IN_SRR',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '避护场所有效面积（平方米）',
+		    field : 'IN_SH_EFAREA',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '避护场所容纳人数（人）',
+		    field : 'IN_SH_ATCP',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '是否设置应急避护场所标识系统',
+		    field : 'IN_SHMR',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '人均有效避护面积（平方米）',
+		    field : 'IN_PC_SH_AREA',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '服务半径（米）',
+		    field : 'OUT_SRR',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '避护场所建筑面积（平方米）',
+		    field : 'OUT_SH_EFAREA',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '避护场所容纳人数（人）',
+		    field : 'OUT_SH_ATCP',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '是否设置应急避护场所标识系统',
+		    field : 'OUT_SHMR',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '人均建筑面积（平方米）',
+		    field : 'OUT_PC_SHAREA',
+		    sortable : true
+		},{
             field : 'action',
             title : '操作',
             width : 200,
@@ -104,7 +183,7 @@ function avoideDisasterPointAddFun() {
     parent.$.modalDialog({
         title : '添加',
         width : 700,
-        height : 600,
+        height : 700,
         href : '${path}/avoideDisasterPoint/addPage',
         buttons : [ {
             text : '确定',
@@ -131,7 +210,7 @@ function avoideDisasterPointEditFun(id) {
     parent.$.modalDialog({
         title : '编辑',
         width : 700,
-        height : 600,
+        height : 700,
         href :  '${path}/avoideDisasterPoint/editPage?id=' + id,
         buttons : [ {
             text : '确定',

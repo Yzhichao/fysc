@@ -114,6 +114,7 @@
    			 
    			var marker = new T.Marker(new T.LngLat(parseFloat(jd),parseFloat(wd)));
     		map.addOverLay(marker);
+        map.setMapType(TMAP_HYBRID_MAP);
              
         } 
         

@@ -42,7 +42,6 @@ public class AvoideDisasterPointController extends BaseController {
         ShiroUser user = (ShiroUser) SecurityUtils.getSubject().getPrincipal();
    	 	String dscd=user.getDscd();
    	 	PageInfo pageInfo = new PageInfo(page, rows);
-   	 	System.out.println(avoideDisasterPoint.getName());
         Map<String, Object> condition = new HashMap<String, Object>();
         if (avoideDisasterPoint.getName() != null) {
             condition.put("name", avoideDisasterPoint.getName());

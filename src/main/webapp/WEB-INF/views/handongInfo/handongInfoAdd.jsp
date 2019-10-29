@@ -43,14 +43,6 @@
     <div data-options="region:'center',border:false" style="overflow: hidden;padding: 3px;" >
         <form id="handongInfoAddForm" method="post">
             <table class="grid">
-                <tr>
-                    <td>位置</td>
-                    <td><input name="addvnm" style="height: 29px;width:260px;" class="easyui-textbox" type="text" data-options="required:true" ></td>
-                </tr>
-                <tr>
-                    <td>涵洞名称</td>
-                    <td><input name="holeName" style="height: 29px;width:260px;" class="easyui-textbox" type="text" data-options="required:true"></td>
-                </tr>
             	<tr>
                     <td>所在镇（街）</td>
                     <td>
@@ -58,18 +50,36 @@
                     	<input name="twn" id="handongInfoAddZwQy" type="hidden">
                     </td>
                 </tr>
-                <tr>
-                    <td>类型</td>
-                    <td><input name="holeType" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
-                </tr>
-                <tr>
-                    <td>洞身高(m)</td>
-                    <td><input name="holeHight" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:2" type="text"></td>
-                </tr>
-                <tr>
-                    <td>洞身宽或直径(m)</td>
-                    <td><input name="holeWid" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:2" type="text"></td>
-                </tr>
+
+<tr>
+    <td>村</td>
+    <td><input name="vl" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<!-- <tr>
+    <td>行政区代码</td>
+    <td><input name="addvcd" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr> -->
+<tr>
+    <td>行政区名称</td>
+    <td><input name="addvnm" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>涵洞名称</td>
+    <td><input name="holeName" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>涵洞类型</td>
+    <td><input name="holeType" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>洞身高（m）</td>
+    <td><input name="holeHight" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>洞身宽或直径（m）</td>
+    <td><input name="holeWid" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+
                 <tr>
                     <td>经度（°）</td>
                     <td><input id="handongInfoAddJd" name="lgtd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5" type="text" ><a href="javascript:void(0);" class="easyui-linkbutton" data-options="iconCls:'fi-magnifying-glass',plain:true" onclick="selMap('handongInfoAddJd','handongInfoAddWd');">查看地图</a></td>
@@ -78,12 +88,6 @@
                     <td>纬度（°）</td>
                     <td><input id="handongInfoAddWd" name="lttd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5" type="text" ></td>
                 </tr>
-                <!-- 
-                <tr>
-                    <td>备注</td>
-                    <td><input name="bz" style="height: 29px;width:260px;" class="easyui-textbox" type="text" ></td>
-                </tr>
-                 -->
             </table>
         </form>
     </div>

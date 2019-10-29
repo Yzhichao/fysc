@@ -21,78 +21,101 @@
             ssortable : true,
             hidden : true
         },{
-            width : '230',
-            title : '堤防名称',
-            field : 'DKNM',
-            sortable : true
-        },{
-            width : '250',
-            title : '区域',
-            field : 'dsvb',
-            sortable : true
-        },
-		/*         
-		{
-            width : '80',
-            title : '所在河流',
-            field : 'szhl',
-            sortable : true
-        }, 
-        */
-        {
-            width : '80',
-            title : '跨界情况',
-            field : 'DKCR',
-            sortable : true
-        },{
-            width : '180',
-            title : '堤防类型',
-            field : 'DKTYPE',
-            sortable : true
-        },{
-            width : '100',
-            title : '堤防型式',
-            field : 'DKTYPE1',
-            sortable : true
-        },
-        /* 
-        {
-            width : '80',
-            title : '堤防级别',
-            field : 'dfjb',
-            sortable : true
-        },
-         */
-        {
-            width : '120',
-            title : '规划防洪标准(年)',
-            field : 'PLFLST',
-            sortable : true
-        },{
-            width : '120',
-            title : '堤防长度(m)',
-            field : 'DKLEN',
-            sortable : true
-        },
-        /* 
-        {
-            width : '80',
-            title : '高程系统',
-            field : 'gcxt',
-            sortable : true
-        },{
-            width : '80',
-            title : '设计水位(m)',
-            field : 'sjsw',
-            sortable : true
-        },{
-            width : '160',
-            title : '备注',
-            field : 'bz',
-            sortable : true
-        },
-         */
-        {
+		    width : '120',
+		    title : '堤防名称',
+		    field : 'DKNM',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '河流岸别',
+		    field : 'RVBK',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '堤防跨界情况',
+		    field : 'DKCR',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '堤防类型',
+		    field : 'DKTYPE',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '堤防型式',
+		    field : 'DKTYPE1',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '工程状态',
+		    field : 'PRST',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '规划防洪标准(年)',
+		    field : 'PLFLST',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '堤防长度(m)',
+		    field : 'DKLEN',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '达到规划标准长度',
+		    field : 'ACPLLEN',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '归口管理部门代码',
+		    field : 'CADCD',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '管理单位名称',
+		    field : 'ADNM',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '是否划界',
+		    field : 'DS',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '是否确界',
+		    field : 'DT',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '镇、街',
+		    field : 'TWN',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '堤防全名',
+		    field : 'DKTNM',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '起x',
+		    field : 'STLGTD',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '起y',
+		    field : 'STLTTD',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '终x',
+		    field : 'ENDLGTD',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '终y',
+		    field : 'ENDLTTD',
+		    sortable : true
+		},{
             field : 'action',
             title : '操作',
             width : 200,

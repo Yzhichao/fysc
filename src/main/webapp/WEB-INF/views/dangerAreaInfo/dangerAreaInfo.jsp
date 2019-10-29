@@ -20,62 +20,69 @@
             field : 'ID',
             ssortable : true,
             hidden : true
-        },{
-            width : '160',
-            title : '危险区名称',
-            field : 'DZ_NAME',
-            sortable : true
-        },{
-            width : '160',
-            title : '位置',
-            field : 'ADD',
-            sortable : true
-        },{
-            width : '160',
-            title : '所在镇（街）',
-            field : 'TWN',
-            sortable : true
-        },{
-            width : '80',
-            title : '易受灾类型',
-            field : 'AF_TYPE',
-            sortable : true
-        },{
-            width : '80',
-            title : '房屋数量',
-            field : 'HS_NUM',
-            sortable : true
-        },{
-            width : '80',
-            title : '受威胁人数',
-            field : 'THPP',
-            sortable : true
-        },{
-            width : '160',
-            title : '重要设施、厂矿企业',
-            field : 'IMFC',
-            sortable : true
-        },{
-            width : '180',
-            title : '预警方式（铜锣、手摇报警器）',
-            field : 'WR_WAY',
-            sortable : true
-        },{
-            width : '80',
-            title : '经度',
-            field : 'LGTD',
-            sortable : true
-        },{
-            width : '80',
-            title : '纬度',
-            field : 'LTTD',
-            sortable : true
-        },{
-            width : '160',
-            title : '备注',
-            field : 'COMMENTS',
-            sortable : true
-        }, {
+        },
+{
+    width : '120',
+    title : '位置',
+    field : 'ADD',
+    sortable : true
+},{
+    width : '120',
+    title : '危险区名',
+    field : 'DZ_NAME',
+    sortable : true
+},{
+    width : '120',
+    title : '易受灾类型',
+    field : 'AF_TYPE',
+    sortable : true
+},{
+    width : '120',
+    title : '房屋数量',
+    field : 'HS_NUM',
+    sortable : true
+},{
+    width : '120',
+    title : '受威胁人数',
+    field : 'THPP',
+    sortable : true
+},{
+    width : '120',
+    title : '重要设施、厂矿企业',
+    field : 'IMFC',
+    sortable : true
+},{
+    width : '120',
+    title : '预警方式（铜锣、手摇报警器）',
+    field : 'WR_WAY',
+    sortable : true
+},{
+    width : '120',
+    title : '备注',
+    field : 'COMMENTS',
+    sortable : true
+},{
+    width : '120',
+    title : '所在镇（街）',
+    field : 'TWN',
+    sortable : true
+},{
+    width : '120',
+    title : '经度(°)',
+    field : 'LGTD',
+    sortable : true
+},{
+    width : '120',
+    title : '纬度(°)',
+    field : 'LTTD',
+    sortable : true
+},{
+    width : '120',
+    title : '最近一次受灾情况',
+    field : 'LTAF',
+    sortable : true
+},
+{
             field : 'action',
             title : '操作',
             width : 200,

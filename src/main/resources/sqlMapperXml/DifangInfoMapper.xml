@@ -6,9 +6,9 @@
 
 <select id="selectPageNew" resultType="java.util.HashMap">
         SELECT 
-        b.*,a.dsvb 
+        b.*
         FROM 
-        difang_info b left join sys_dscdnm_b a on b.dscd=a.dscd where delflag is null   
+        difang_info b where delflag is null   
       
             <if test=" dknm != null and dknm != '' ">
                  and b.DKNM like concat('%',#{dknm},'%')

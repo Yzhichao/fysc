@@ -59,11 +59,11 @@
                     <td><input name="sslx" style="height: 29px;width:260px;" class="easyui-textbox" type="text" ></td>
                 </tr>
                 <tr>
-                    <td>经度</td>
+                    <td>经度(°)</td>
                     <td><input id="warnEquipInfoAddJd" name="jd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5" type="text" ><a href="javascript:void(0);" class="easyui-linkbutton" data-options="iconCls:'fi-magnifying-glass',plain:true" onclick="selMap('warnEquipInfoAddJd','warnEquipInfoAddWd');">查看地图</a></td>
                 </tr>
                 <tr>
-                    <td>纬度</td>
+                    <td>纬度(°)</td>
                     <td><input id="warnEquipInfoAddWd" name="wd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5" type="text" ></td>
                 </tr>
                 <tr>

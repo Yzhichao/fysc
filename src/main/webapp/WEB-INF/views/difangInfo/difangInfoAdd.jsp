@@ -37,7 +37,7 @@
    
 </script>
 <div class="easyui-layout" data-options="fit:true,border:false" >
-    <div data-options="region:'center',border:false" style="overflow: hidden;padding: 3px;" >
+    <div data-options="region:'center',border:false" style="padding: 3px;" >
         <form id="difangInfoAddForm" method="post">
             <table class="grid">
                 <tr>
@@ -46,56 +46,82 @@
                     	<select id="difangInfoAddQy" name="dscd"  style="width: 260px; height: 29px;" class="easyui-validatebox" data-options="required:true"></select>
                     </td>
                 </tr>
-                <tr>
-                    <td>堤防名称</td>
-                    <td><input name="dknm" style="height: 29px;width:260px;" class="easyui-textbox" type="text" data-options="required:true" ></td>
-                </tr>
-                <!-- 
-                <tr>
-                    <td>所在河流</td>
-                    <td><input name="szhl" style="height: 29px;width:260px;" class="easyui-textbox" type="text" ></td>
-                </tr>
-                 -->
-                <tr>
-                    <td>跨界情况</td>
-                    <td><input name="dkcr" style="height: 29px;width:260px;" class="easyui-textbox" type="text" ></td>
-                </tr>
-                <tr>
-                    <td>堤防类型</td>
-                    <td><input name="dktype" style="height: 29px;width:260px;" class="easyui-textbox" type="text" ></td>
-                </tr>
-                <tr>
-                    <td>堤防型式</td>
-                    <td><input name="dktype1" style="height: 29px;width:260px;" class="easyui-textbox" type="text" ></td>
-                </tr>
-                <!-- 
-                <tr>
-                    <td>堤防级别</td>
-                    <td><input name="dfjb" style="height: 29px;width:260px;" class="easyui-textbox" type="text" ></td>
-                </tr>
-                 -->
-                <tr>
-                    <td>规划防洪标准(年)</td>
-                    <td><input name="plflst" style="height: 29px;width:260px;"class="easyui-numberbox" data-options="min:0" type="text" ></td>
-                </tr>
-                <tr>
-                    <td>堤防长度(m)</td>
-                    <td><input name="dklen" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:2" type="text" ></td>
-                </tr>
-                <!-- 
-                <tr>
-                    <td>高程系统</td>
-                    <td><input name="gcxt" style="height: 29px;width:260px;" class="easyui-textbox" type="text" ></td>
-                </tr>
-                <tr>
-                    <td>设计水位(m)</td>
-                    <td><input name="sjsw" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:2" type="text" ></td>
-                </tr>
-                <tr>
-                    <td>备注</td>
-                    <td><input name="bz" style="height: 29px;width:260px;" class="easyui-textbox" type="text" ></td>
-                </tr>
-                 -->
+<tr>
+    <td>堤防名称</td>
+    <td><input name="dknm" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>河流岸别</td>
+    <td><input name="rvbk" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>堤防跨界情况</td>
+    <td><input name="dkcr" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>堤防类型</td>
+    <td><input name="dktype" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>堤防型式</td>
+    <td><input name="dktype1" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>工程状态</td>
+    <td><input name="prst" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>规划防洪标准(年)</td>
+    <td><input name="plflst" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>堤防长度(m)</td>
+    <td><input name="dklen" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>达到规划标准长度</td>
+    <td><input name="acpllen" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>归口管理部门代码</td>
+    <td><input name="cadcd" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>管理单位名称</td>
+    <td><input name="adnm" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>是否划界</td>
+    <td><input name="ds" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>是否确界</td>
+    <td><input name="dt" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>堤防全名</td>
+    <td><input name="dktnm" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>起x</td>
+    <td><input name="stlgtd" id="stlgtd" style="height: 29px;width:260px;" class="easyui-textbox" type="text" data-options="min:0,precision:5" >
+    <a href="javascript:void(0);" class="easyui-linkbutton" data-options="iconCls:'fi-magnifying-glass',plain:true" onclick="selMap('stlgtd','stlttd');">查看地图</a>
+    </td>
+</tr>
+<tr>
+    <td>起y</td>
+    <td><input name="stlttd" id="stlttd" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>终x</td>
+    <td><input name="endlgtd" id="endlgtd" style="height: 29px;width:260px;" class="easyui-textbox" type="text">
+    <a href="javascript:void(0);" class="easyui-linkbutton" data-options="iconCls:'fi-magnifying-glass',plain:true" onclick="selMap('endlgtd','endlttd');">查看地图</a>
+    </td>
+</tr>
+<tr>
+    <td>终y</td>
+    <td><input name="endlttd" id="endlttd" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
             </table>
         </form>
     </div>

@@ -40,13 +40,9 @@
    
 </script>
 <div class="easyui-layout" data-options="fit:true,border:false" >
-    <div data-options="region:'center',border:false" style="overflow: hidden;padding: 3px;" >
+    <div data-options="region:'center',border:false" style="padding: 3px;" >
         <form id="waterElecInfoAddForm" method="post">
             <table class="grid">
-            	<tr>
-                    <td>电站名称</td>
-                    <td><input name="name" style="height: 29px;width:260px;" class="easyui-textbox" type="text" data-options="required:true" ></td>
-                </tr>
                 <tr>
                     <td>所在镇（街）</td>
                     <td>
@@ -54,40 +50,63 @@
                     	<input name="twn" id="waterElecInfoAddZwQy" type="hidden">
                     </td>
                 </tr>
-                <tr>
-                    <td>类型</td>
-                    <td><input name="ptype" style="height: 29px;width:260px;" class="easyui-textbox" type="text" ></td>
-                </tr>
-                <tr>
-                    <td>工程等级</td>
-                    <td><input name="prgrd" style="height: 29px;width:260px;" class="easyui-textbox" type="text" ></td>
-                </tr>
-                <tr>
-                    <td>装机容量(kW)</td>
-                    <td><input name="ic" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:2" type="text"></td>
-                </tr>
-                <tr>
-                    <td>机组台数(台)</td>
-                    <td><input name="ut" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0" type="text" ></td>
-                </tr>
-                <tr>
-                    <td>管理单位名称</td>
-                    <td><input name="adnm" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
-                </tr>
-                <!-- 
-                <tr>
-                    <td>备注</td>
-                    <td><input name="bz" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
-                </tr>
-                <tr>
-                    <td>经度</td>
-                    <td><input id="waterElecInfoAddJd" name="jd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5" type="text" ><a href="javascript:void(0);" class="easyui-linkbutton" data-options="iconCls:'fi-magnifying-glass',plain:true" onclick="selMap('waterElecInfoAddJd','waterElecInfoAddWd');">查看地图</a></td>
-                </tr>
-                <tr>
-                    <td>纬度</td>
-                    <td><input id="waterElecInfoAddWd" name="wd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5" type="text"></td>
-                </tr>
-                 -->
+<tr>
+    <td>工程名称</td>
+    <td><input name="name" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>水资源三级分区</td>
+    <td><input name="tldwr" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>水电站类型</td>
+    <td><input name="ptype" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>工程状态</td>
+    <td><input name="prst" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>工程等级</td>
+    <td><input name="prgrd" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>装机容量(kW)</td>
+    <td><input name="ic" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>保证出力(kW)</td>
+    <td><input name="fp" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>额定水头(m)</td>
+    <td><input name="rh" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>机组台数(台)</td>
+    <td><input name="ut" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>多年平均发电量(万kW•h)</td>
+    <td><input name="aaeo" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>管理单位名称</td>
+    <td><input name="adnm" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>归口管理单位代码</td>
+    <td><input name="cadcd" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>是否划界</td>
+    <td><input name="ds" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>是否确权</td>
+    <td><input name="dt" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+
             </table>
         </form>
     </div>

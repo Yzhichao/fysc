@@ -52,43 +52,49 @@
             	<tr>
                     <td>行政区</td>
                     <td>
+                    <input name="id"  type="hidden"  value="${yanbaInfo.id}">
                     <select id="yanbaInfoEditQy" name="dscd"  style="width: 260px; height: 29px;" class="easyui-validatebox" data-options="required:true"></select>
                     <input name="twn" id="yanbaInfoEditZwQy" type="hidden" value="${yanbaInfo.twn}" ></td>
                 </tr>
+<%--                 
                 <tr>
-                    <td>堰坝名称</td>
-                    <td><input name="id"  type="hidden"  value="${yanbaInfo.id}">
-                    <input name="wrName" style="height: 29px;width:260px;" class="easyui-textbox" type="text" data-options="required:true" value="${yanbaInfo.wrName}"></td>
-                </tr>
-                <tr>
-                    <td>挡水坝类型</td>
-                    <td><input name="wrType" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${yanbaInfo.wrType}"></td>
-                </tr>
-                <tr>
-                    <td>容积(m3)</td>
-                    <td><input name="cp" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:2" type="text" value="${yanbaInfo.cp}"></td>
-                </tr>
-                <tr>
-                    <td>坝高(m)</td>
-                    <td><input name="damHight" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:2" type="text" value="${yanbaInfo.damHight}"></td>
-                </tr>
-                <tr>
+				    <td>行政区名称</td>
+				    <td><input name="addvnm" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${yanbaInfo.addvnm}"></td>
+				</tr>
+				
+				 --%>
+				<tr>
+				    <td>堰坝名称</td>
+				    <td><input name="wrName" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${yanbaInfo.wrName}"></td>
+				</tr>
+				<tr>
+				    <td>所在河道</td>
+				    <td><input name="rv" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${yanbaInfo.rv}"></td>
+				</tr>
+				<tr>
+				    <td>堰坝类型</td>
+				    <td><input name="wrType" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${yanbaInfo.wrType}"></td>
+				</tr>
+				<tr>
+				    <td>容积（m^3)</td>
+				    <td><input name="cp" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${yanbaInfo.cp}"></td>
+				</tr>
+				<tr>
+				    <td>坝高（m^3)</td>
+				    <td><input name="damHight" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${yanbaInfo.damHight}"></td>
+				</tr>
+				<tr>
+				    <td>备注</td>
+				    <td><input name="comments" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${yanbaInfo.comments}"></td>
+				</tr>
+				<tr>
                     <td>经度(°)</td>
                     <td><input id="yanbaInfoEditJd" name="lgtd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5" type="text" value="${yanbaInfo.lgtd}"><a href="javascript:void(0);" class="easyui-linkbutton" data-options="iconCls:'fi-magnifying-glass',plain:true" onclick="selMap('yanbaInfoEditJd','yanbaInfoEditWd');">查看地图</a></td>
                 </tr>
                 <tr>
                     <td>纬度(°)</td>
                     <td><input id="yanbaInfoEditWd" name="lttd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5" type="text" value="${yanbaInfo.lttd}"></td>
-                </tr>
-                <tr>
-                    <td>备注</td>
-                    <td><input name="comments" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${yanbaInfo.comments}"></td>
-                </tr>
-                <tr>
-                    <td>所在河道</td>
-                    <td><input name="rv" style="height: 29px;width:260px;" class="easyui-textbox" type="text" value="${yanbaInfo.rv}"></td>
-                </tr>
-                
+                </tr>                
             </table>
         </form>
     </div>

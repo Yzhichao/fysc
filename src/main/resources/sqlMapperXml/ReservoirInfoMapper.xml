@@ -6,7 +6,8 @@
 
 <select id="selectPageNew" resultType="java.util.HashMap">
         SELECT 
-        b.ID,b.RSNAME,b.TWN,b.MDNM,b.MDAMTYPE,b.PRSC,b.RSFN,b.DSFLZ,b.TTCP,b.MD_MX_HIG,b.LGTD,b.LTTD,b.BSNM 
+        <!-- b.ID,b.RSNAME,b.TWN,b.MDNM,b.MDAMTYPE,b.PRSC,b.RSFN,b.DSFLZ,b.TTCP,b.MD_MX_HIG,b.LGTD,b.LTTD,b.BSNM  -->
+        b.*
         FROM 
         reservoir_info b where delflag is null   
       

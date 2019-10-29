@@ -37,12 +37,12 @@
             sortable : true
         },{
             width : '80',
-            title : '经度',
+            title : '经度(°)',
             field : 'jd',
             sortable : true
         },{
             width : '80',
-            title : '纬度',
+            title : '纬度(°)',
             field : 'wd',
             sortable : true
         },{

@@ -50,41 +50,47 @@
                     	<input name="twn" id="rescueGroupInfoAddZwQy" type="hidden">
                     </td>
                 </tr>
-                <tr>
-                    <td>名称</td>
-                    <td><input name="name" style="height: 29px;width:260px;" class="easyui-textbox" type="text" data-options="required:true" ></td>
-                </tr>
-                <tr>
-                    <td>人数</td>
-                    <td><input name="pp" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0" type="text" ></td>
-                </tr>
-                <tr>
-                    <td>所属部门或单位</td>
-                    <td><input name="ad" style="height: 29px;width:260px;" class="easyui-textbox" type="text" ></td>
-                </tr>
-                <tr>
-                    <td>负责人</td>
-                    <td><input name="head" style="height: 29px;width:260px;" class="easyui-textbox" type="text" ></td>
-                </tr>
-                <tr>
-                    <td>负责人联系方式</td>
-                    <td><input name="tell" style="height: 29px;width:260px;" class="easyui-textbox" type="text" ></td>
-                </tr>
-                <tr>
-                    <td>为民间抢险队的标注“是”</td>
-                    <td><input name="folk" style="height: 29px;width:260px;" class="easyui-textbox" type="text" ></td>
-                </tr>
+<tr>
+    <td>名称</td>
+    <td><input name="name" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>人数</td>
+    <td><input name="pp" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>所属部门</td>
+    <td><input name="ad" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>负责人</td>
+    <td><input name="head" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>联系电话</td>
+    <td><input name="tell" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>为民间</td>
+    <td><input name="folk" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>备注</td>
+    <td><input name="comments" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>队伍级别</td>
+    <td><input name="trGrd" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+
+
                <tr>
-                    <td>经度</td>
+                    <td>经度(°)</td>
                     <td><input id="rescueGroupInfoAddJd" name="lgtd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5" type="text" ><a href="javascript:void(0);" class="easyui-linkbutton" data-options="iconCls:'fi-magnifying-glass',plain:true" onclick="selMap('rescueGroupInfoAddJd','rescueGroupInfoAddWd');">查看地图</a></td>
                 </tr>
                 <tr>
-                    <td>纬度</td>
+                    <td>纬度(°)</td>
                     <td><input id="rescueGroupInfoAddWd" name="lttd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5" type="text" ></td>
-                </tr>
-                <tr>
-                    <td>备注</td>
-                    <td><input name="comments" style="height: 29px;width:260px;" class="easyui-textbox" type="text" ></td>
                 </tr>
             </table>
         </form>

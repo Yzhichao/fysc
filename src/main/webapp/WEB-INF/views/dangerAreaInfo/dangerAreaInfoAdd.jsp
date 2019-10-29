@@ -40,7 +40,7 @@
    
 </script>
 <div class="easyui-layout" data-options="fit:true,border:false" >
-    <div data-options="region:'center',border:false" style="overflow: hidden;padding: 3px;" >
+    <div data-options="region:'center',border:false" style="padding: 3px;" >
         <form id="dangerAreaInfoAddForm" method="post">
             <table class="grid">
                 <tr>
@@ -50,45 +50,51 @@
                     	<input name="twn" id="dangerAreaInfoAddZwQy" type="hidden">
                     </td>
                 </tr>
-                 <tr>
-                    <td>位置</td>
-                    <td><input name="add" style="height: 29px;width:260px;" class="easyui-textbox" type="text" data-options="required:true" ></td>
-                </tr>
+
+<tr>
+    <td>位置</td>
+    <td><input name="add" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>危险区名</td>
+    <td><input name="dzName" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>易受灾类型</td>
+    <td><input name="afType" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>房屋数量</td>
+    <td><input name="hsNum" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>受威胁人数</td>
+    <td><input name="thpp" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>重要设施、厂矿企业</td>
+    <td><input name="imfc" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>预警方式（铜锣、手摇报警器）</td>
+    <td><input name="wrWay" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>备注</td>
+    <td><input name="comments" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+<tr>
+    <td>最近一次受灾情况</td>
+    <td><input name="ltaf" style="height: 29px;width:260px;" class="easyui-textbox" type="text"></td>
+</tr>
+
                 <tr>
-                    <td>危险区名称</td>
-                    <td><input name="dzName" style="height: 29px;width:260px;" class="easyui-textbox" type="text" data-options="required:true" ></td>
-                </tr>
-                <tr>
-                    <td>易受灾类型</td>
-                    <td><input name="afType" style="height: 29px;width:260px;" class="easyui-textbox" type="text" ></td>
-                </tr>
-                <tr>
-                    <td>房屋数量</td>
-                    <td><input name="hsNum" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0" type="text" ></td>
-                </tr>
-                <tr>
-                    <td>受威胁人数</td>
-                    <td><input name="thpp" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0" type="text" ></td>
-                </tr>
-                <tr>
-                    <td>重要设施、厂矿企业</td>
-                    <td><input name="imfc" style="height: 29px;width:260px;" class="easyui-textbox" type="text" ></td>
-                </tr>
-                <tr>
-                    <td>预警方式（铜锣、手摇报警器）</td>
-                    <td><input name="wrWay" style="height: 29px;width:260px;" class="easyui-textbox" type="text" ></td>
-                </tr>
-                <tr>
-                    <td>经度</td>
+                    <td>经度(°)</td>
                     <td><input id="dangerAreaInfoAddJd" name="lgtd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5" type="text" ><a href="javascript:void(0);" class="easyui-linkbutton" data-options="iconCls:'fi-magnifying-glass',plain:true" onclick="selMap('dangerAreaInfoAddJd','dangerAreaInfoAddWd');">查看地图</a></td>
                 </tr>
                 <tr>
-                    <td>纬度</td>
+                    <td>纬度(°)</td>
                     <td><input id="dangerAreaInfoAddWd" name="lttd" style="height: 29px;width:260px;" class="easyui-numberbox" data-options="min:0,precision:5" type="text"></td>
-                </tr>
-                <tr>
-                    <td>备注</td>
-                    <td><input name="comments" style="height: 29px;width:260px;" class="easyui-textbox" type="text" ></td>
                 </tr>
             </table>
         </form>

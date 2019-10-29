@@ -52,7 +52,7 @@
         LEFT JOIN user_role r ON t.id = r.user_id
         LEFT JOIN role o ON r.role_id = o.id
         LEFT JOIN organization s ON s.id = t.organization_id
-        LEFT JOIN sys_dscdnm_b a ON t.dscd = a.dscd
+        LEFT JOIN sys_dscdnm_c a ON t.dscd = a.dscd
         <where>
             t.id = #{id}
         </where>
@@ -80,7 +80,7 @@
         LEFT JOIN user_role r ON t.id = r.user_id
         LEFT JOIN role o ON r.role_id = o.id
         LEFT JOIN organization s ON s.id = t.organization_id
-        LEFT JOIN sys_dscdnm_b a ON t.dscd = a.dscd
+        LEFT JOIN sys_dscdnm_c a ON t.dscd = a.dscd
         <where>
             <if test=" name != null and name != '' ">
                 t.name like concat('%',#{name},'%')
@@ -89,7 +89,7 @@
                 t.organization_id = #{organizationId}
             </if>
             <if test=" dscd != null and dscd != '' ">
-                 and t.dscd like concat('',#{dscd},'%') 
+                 and t.dscd like concat('',#{dscd},'%')
             </if>
             <if test=" startTime != null ">
                 <![CDATA[ and t.create_time >= #{startTime} ]]>
@@ -99,15 +99,15 @@
             </if>
         </where>
     </select>
-    
+
      <select id="selectAreaList" resultType="SysDscdnmB">
-        select*from sys_dscdnm_b where DSUPCD= #{id} and dscd!='440100' and dscd!='440300' and dscd!='440400' 
-         and dscd!='440500' and dscd!='440600' and dscd!='440700' and dscd!='440800' and dscd!='440900' and dscd!='441200'
-         and dscd!='441300' and dscd!='441500' and dscd!='441700' and dscd!='441900' and dscd!='442000' and dscd!='445100'
-         and dscd!='445200'
+        select*from sys_dscdnm_c where DSUPCD= #{id}  and dscd!='440100000000000' and dscd!='440300000000000' and dscd!='440400000000000'
+         and dscd!='440500000000000' and dscd!='440600000000000' and dscd!='440700000000000' and dscd!='440800000000000' and dscd!='440900000000000' and dscd!='441200000000000'
+         and dscd!='441300000000000' and dscd!='441500000000000' and dscd!='441700000000000' and dscd!='441900000000000' and dscd!='442000000000000' and dscd!='445100000000000'
+         and dscd!='445200000000000'  and DSLEVEL &lt; 5
     </select>
 
 	<select id="selectAreaListByDscd" resultType="SysDscdnmB">
-        select*from sys_dscdnm_b where DSCD= #{id}
+        select*from sys_dscdnm_c where DSCD= #{id} and DSLEVEL &lt; 5
     </select>
 </mapper>

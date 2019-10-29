@@ -21,41 +21,51 @@
             ssortable : true,
             hidden : true
         },{
-            width : '230',
-            title : '名称',
-            field : 'NAME',
-            sortable : true
-        },{
-            width : '160',
-            title : '所在镇（街）',
-            field : 'TWN',
-            sortable : true
-        },{
-            width : '80',
-            title : '联系人',
-            field : 'HEAD',
-            sortable : true
-        },{
-            width : '160',
-            title : '联系方式',
-            field : 'TELL',
-            sortable : true
-        },{
-            width : '100',
-            title : '经度',
-            field : 'LGTD',
-            sortable : true
-        },{
-            width : '100',
-            title : '纬度',
-            field : 'LTTD',
-            sortable : true
-        },{
-            width : '250',
-            title : '备注',
-            field : 'COMMENTS',
-            sortable : true
-        }, {
+		    width : '120',
+		    title : '名称',
+		    field : 'NAME',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '经度(°)',
+		    field : 'LGTD',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '纬度(°)',
+		    field : 'LTTD',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '负责人',
+		    field : 'HEAD',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '联系电话',
+		    field : 'TELL',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '镇',
+		    field : 'TWN',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '仓库级别',
+		    field : 'WR_GRD',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '位置',
+		    field : 'ADD',
+		    sortable : true
+		},{
+		    width : '120',
+		    title : '备注',
+		    field : 'COMMENTS',
+		    sortable : true
+		},{
             field : 'action',
             title : '操作',
             width : 200,
