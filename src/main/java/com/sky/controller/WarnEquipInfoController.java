@@ -3,6 +3,7 @@ package com.sky.controller;
 import java.util.Map;
 import java.util.HashMap;
 
+import com.sky.commons.annotation.LogAnno;
 import org.apache.shiro.SecurityUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -28,9 +29,9 @@ import com.sky.service.IWarnEquipInfoService;
 @Controller
 @RequestMapping("/warnEquipInfo")
 public class WarnEquipInfoController extends BaseController {
-    
+
     @Autowired private IWarnEquipInfoService warnEquipInfoService;
-    
+
     @GetMapping("/manager")
     public String manager() {
         return "warnEquipInfo/warnEquipInfo";
@@ -57,7 +58,7 @@ public class WarnEquipInfoController extends BaseController {
         warnEquipInfoService.selectDataGrid(pageInfo);
         return pageInfo;
     }
-    
+
     /**
      * 添加页面
      * @return
@@ -69,9 +70,10 @@ public class WarnEquipInfoController extends BaseController {
 
     /**
      * 添加
-     * @param 
+     * @param
      * @return
      */
+    @LogAnno(operateType = 1, TableName = "warn_equip_info")
     @PostMapping("/add")
     @ResponseBody
     public Object add(WarnEquipInfo warnEquipInfo) {
@@ -89,6 +91,7 @@ public class WarnEquipInfoController extends BaseController {
      * @param id
      * @return
      */
+    @LogAnno(operateType = 3, TableName = "warn_equip_info")
     @RequestMapping("/delete")
     @ResponseBody
     public Object delete(Integer id) {
@@ -118,9 +121,10 @@ public class WarnEquipInfoController extends BaseController {
 
     /**
      * 编辑
-     * @param 
+     * @param
      * @return
      */
+    @LogAnno(operateType = 2, TableName = "warn_equip_info")
     @RequestMapping("/edit")
     @ResponseBody
     public Object edit(WarnEquipInfo warnEquipInfo) {
@@ -132,5 +136,5 @@ public class WarnEquipInfoController extends BaseController {
             return renderError("编辑失败！");
         }
     }
-    
+
 }

@@ -3,6 +3,7 @@ package com.sky.controller;
 import java.util.Map;
 import java.util.HashMap;
 
+import com.sky.commons.annotation.LogAnno;
 import org.apache.shiro.SecurityUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -27,9 +28,9 @@ import com.sky.service.IAvoideDisasterPointService;
 @Controller
 @RequestMapping("/avoideDisasterPoint")
 public class AvoideDisasterPointController extends BaseController {
-    
+
     @Autowired private IAvoideDisasterPointService avoideDisasterPointService;
-    
+
     @GetMapping("/manager")
     public String manager() {
         return "avoideDisasterPoint/avoideDisasterPoint";
@@ -56,7 +57,7 @@ public class AvoideDisasterPointController extends BaseController {
         avoideDisasterPointService.selectDataGrid(pageInfo);
         return pageInfo;
     }
-    
+
     /**
      * 添加页面
      * @return
@@ -68,9 +69,10 @@ public class AvoideDisasterPointController extends BaseController {
 
     /**
      * 添加
-     * @param 
+     * @param
      * @return
      */
+    @LogAnno(operateType = 1, TableName = "avoide_disaster_point")
     @PostMapping("/add")
     @ResponseBody
     public Object add(AvoideDisasterPoint avoideDisasterPoint) {
@@ -87,6 +89,7 @@ public class AvoideDisasterPointController extends BaseController {
      * @param id
      * @return
      */
+    @LogAnno(operateType = 3, TableName = "avoide_disaster_point")
     @RequestMapping("/delete")
     @ResponseBody
     public Object delete(Integer id) {
@@ -116,9 +119,10 @@ public class AvoideDisasterPointController extends BaseController {
 
     /**
      * 编辑
-     * @param 
+     * @param
      * @return
      */
+    @LogAnno(operateType = 2, TableName = "avoide_disaster_point")
     @RequestMapping("/edit")
     @ResponseBody
     public Object edit(AvoideDisasterPoint avoideDisasterPoint) {
@@ -129,5 +133,5 @@ public class AvoideDisasterPointController extends BaseController {
             return renderError("编辑失败！");
         }
     }
-    
+
 }

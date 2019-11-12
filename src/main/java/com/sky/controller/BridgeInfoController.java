@@ -3,6 +3,7 @@ package com.sky.controller;
 import java.util.Map;
 import java.util.HashMap;
 
+import com.sky.commons.annotation.LogAnno;
 import org.apache.shiro.SecurityUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -28,9 +29,9 @@ import com.sky.service.IBridgeInfoService;
 @Controller
 @RequestMapping("/bridgeInfo")
 public class BridgeInfoController extends BaseController {
-    
+
     @Autowired private IBridgeInfoService bridgeInfoService;
-    
+
     @GetMapping("/manager")
     public String manager() {
         return "bridgeInfo/bridgeInfo";
@@ -57,7 +58,7 @@ public class BridgeInfoController extends BaseController {
         bridgeInfoService.selectDataGrid(pageInfo);
         return pageInfo;
     }
-    
+
     /**
      * 添加页面
      * @return
@@ -69,9 +70,10 @@ public class BridgeInfoController extends BaseController {
 
     /**
      * 添加
-     * @param 
+     * @param
      * @return
      */
+    @LogAnno(operateType = 1, TableName = "bridge_info")
     @PostMapping("/add")
     @ResponseBody
     public Object add(BridgeInfo bridgeInfo) {
@@ -89,6 +91,7 @@ public class BridgeInfoController extends BaseController {
      * @param id
      * @return
      */
+    @LogAnno(operateType = 3, TableName = "bridge_info")
     @RequestMapping("/delete")
     @ResponseBody
     public Object delete(Integer id) {
@@ -118,9 +121,10 @@ public class BridgeInfoController extends BaseController {
 
     /**
      * 编辑
-     * @param 
+     * @param
      * @return
      */
+    @LogAnno(operateType = 2, TableName = "bridge_info")
     @RequestMapping("/edit")
     @ResponseBody
     public Object edit(BridgeInfo bridgeInfo) {
@@ -132,5 +136,5 @@ public class BridgeInfoController extends BaseController {
             return renderError("编辑失败！");
         }
     }
-    
+
 }

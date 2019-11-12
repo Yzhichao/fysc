@@ -3,6 +3,7 @@ package com.sky.controller;
 import java.util.Map;
 import java.util.HashMap;
 
+import com.sky.commons.annotation.LogAnno;
 import org.apache.shiro.SecurityUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -27,9 +28,9 @@ import com.sky.service.IReservoirInfoService;
 @Controller
 @RequestMapping("/reservoirInfo")
 public class ReservoirInfoController extends BaseController {
-    
+
     @Autowired private IReservoirInfoService reservoirInfoService;
-    
+
     @GetMapping("/manager")
     public String manager() {
         return "reservoirInfo/reservoirInfo";
@@ -56,7 +57,7 @@ public class ReservoirInfoController extends BaseController {
         reservoirInfoService.selectDataGrid(pageInfo);
         return pageInfo;
     }
-    
+
     /**
      * 添加页面
      * @return
@@ -68,9 +69,10 @@ public class ReservoirInfoController extends BaseController {
 
     /**
      * 添加
-     * @param 
+     * @param
      * @return
      */
+    @LogAnno(operateType = 1, TableName = "reservoir_info")
     @PostMapping("/add")
     @ResponseBody
     public Object add(ReservoirInfo reservoirInfo) {
@@ -87,6 +89,7 @@ public class ReservoirInfoController extends BaseController {
      * @param id
      * @return
      */
+    @LogAnno(operateType = 3, TableName = "reservoir_info")
     @RequestMapping("/delete")
     @ResponseBody
     public Object delete(Integer id) {
@@ -116,9 +119,10 @@ public class ReservoirInfoController extends BaseController {
 
     /**
      * 编辑
-     * @param 
+     * @param
      * @return
      */
+    @LogAnno(operateType = 2, TableName = "reservoir_info")
     @RequestMapping("/edit")
     @ResponseBody
     public Object edit(ReservoirInfo reservoirInfo) {
@@ -129,5 +133,5 @@ public class ReservoirInfoController extends BaseController {
             return renderError("编辑失败！");
         }
     }
-    
+
 }

@@ -3,6 +3,7 @@ package com.sky.controller;
 import java.util.Map;
 import java.util.HashMap;
 
+import com.sky.commons.annotation.LogAnno;
 import org.apache.shiro.SecurityUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -27,9 +28,9 @@ import com.sky.service.IRescueGroupInfoService;
 @Controller
 @RequestMapping("/rescueGroupInfo")
 public class RescueGroupInfoController extends BaseController {
-    
+
     @Autowired private IRescueGroupInfoService rescueGroupInfoService;
-    
+
     @GetMapping("/manager")
     public String manager() {
         return "rescueGroupInfo/rescueGroupInfo";
@@ -56,7 +57,7 @@ public class RescueGroupInfoController extends BaseController {
         rescueGroupInfoService.selectDataGrid(pageInfo);
         return pageInfo;
     }
-    
+
     /**
      * 添加页面
      * @return
@@ -68,9 +69,10 @@ public class RescueGroupInfoController extends BaseController {
 
     /**
      * 添加
-     * @param 
+     * @param
      * @return
      */
+    @LogAnno(operateType = 1, TableName = "rescue_group_info")
     @PostMapping("/add")
     @ResponseBody
     public Object add(RescueGroupInfo rescueGroupInfo) {
@@ -87,6 +89,7 @@ public class RescueGroupInfoController extends BaseController {
      * @param id
      * @return
      */
+    @LogAnno(operateType = 3, TableName = "rescue_group_info")
     @RequestMapping("/delete")
     @ResponseBody
     public Object delete(Integer id) {
@@ -116,9 +119,10 @@ public class RescueGroupInfoController extends BaseController {
 
     /**
      * 编辑
-     * @param 
+     * @param
      * @return
      */
+    @LogAnno(operateType = 2, TableName = "rescue_group_info")
     @RequestMapping("/edit")
     @ResponseBody
     public Object edit(RescueGroupInfo rescueGroupInfo) {
@@ -129,5 +133,5 @@ public class RescueGroupInfoController extends BaseController {
             return renderError("编辑失败！");
         }
     }
-    
+
 }

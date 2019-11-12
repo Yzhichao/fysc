@@ -3,6 +3,7 @@ package com.sky.controller;
 import java.util.Map;
 import java.util.HashMap;
 
+import com.sky.commons.annotation.LogAnno;
 import org.apache.shiro.SecurityUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -27,9 +28,9 @@ import com.sky.service.IWaterElecInfoService;
 @Controller
 @RequestMapping("/waterElecInfo")
 public class WaterElecInfoController extends BaseController {
-    
+
     @Autowired private IWaterElecInfoService waterElecInfoService;
-    
+
     @GetMapping("/manager")
     public String manager() {
         return "waterElecInfo/waterElecInfo";
@@ -56,7 +57,7 @@ public class WaterElecInfoController extends BaseController {
         waterElecInfoService.selectDataGrid(pageInfo);
         return pageInfo;
     }
-    
+
     /**
      * 添加页面
      * @return
@@ -68,9 +69,10 @@ public class WaterElecInfoController extends BaseController {
 
     /**
      * 添加
-     * @param 
+     * @param
      * @return
      */
+    @LogAnno(operateType = 1, TableName = "water_elec_info")
     @PostMapping("/add")
     @ResponseBody
     public Object add(WaterElecInfo waterElecInfo) {
@@ -87,6 +89,7 @@ public class WaterElecInfoController extends BaseController {
      * @param id
      * @return
      */
+    @LogAnno(operateType = 3, TableName = "water_elec_info")
     @RequestMapping("/delete")
     @ResponseBody
     public Object delete(Integer id) {
@@ -116,9 +119,10 @@ public class WaterElecInfoController extends BaseController {
 
     /**
      * 编辑
-     * @param 
+     * @param
      * @return
      */
+    @LogAnno(operateType = 2, TableName = "water_elec_info")
     @RequestMapping("/edit")
     @ResponseBody
     public Object edit(WaterElecInfo waterElecInfo) {
@@ -129,5 +133,5 @@ public class WaterElecInfoController extends BaseController {
             return renderError("编辑失败！");
         }
     }
-    
+
 }

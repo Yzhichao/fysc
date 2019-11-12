@@ -3,6 +3,7 @@ package com.sky.controller;
 import java.util.Map;
 import java.util.HashMap;
 
+import com.sky.commons.annotation.LogAnno;
 import org.apache.shiro.SecurityUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -27,9 +28,9 @@ import com.sky.service.IYanbaInfoService;
 @Controller
 @RequestMapping("/yanbaInfo")
 public class YanbaInfoController extends BaseController {
-    
+
     @Autowired private IYanbaInfoService yanbaInfoService;
-    
+
     @GetMapping("/manager")
     public String manager() {
         return "yanbaInfo/yanbaInfo";
@@ -56,7 +57,7 @@ public class YanbaInfoController extends BaseController {
         yanbaInfoService.selectDataGrid(pageInfo);
         return pageInfo;
     }
-    
+
     /**
      * 添加页面
      * @return
@@ -68,9 +69,10 @@ public class YanbaInfoController extends BaseController {
 
     /**
      * 添加
-     * @param 
+     * @param
      * @return
      */
+    @LogAnno(operateType = 1, TableName = "yanba_info")
     @PostMapping("/add")
     @ResponseBody
     public Object add(YanbaInfo yanbaInfo) {
@@ -87,6 +89,7 @@ public class YanbaInfoController extends BaseController {
      * @param id
      * @return
      */
+    @LogAnno(operateType = 3, TableName = "yanba_info")
     @RequestMapping("/delete")
     @ResponseBody
     public Object delete(Integer id) {
@@ -116,9 +119,10 @@ public class YanbaInfoController extends BaseController {
 
     /**
      * 编辑
-     * @param 
+     * @param
      * @return
      */
+    @LogAnno(operateType = 2, TableName = "yanba_info")
     @RequestMapping("/edit")
     @ResponseBody
     public Object edit(YanbaInfo yanbaInfo) {
@@ -129,5 +133,5 @@ public class YanbaInfoController extends BaseController {
             return renderError("编辑失败！");
         }
     }
-    
+
 }

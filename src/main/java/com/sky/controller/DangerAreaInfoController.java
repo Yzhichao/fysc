@@ -3,6 +3,7 @@ package com.sky.controller;
 import java.util.Map;
 import java.util.HashMap;
 
+import com.sky.commons.annotation.LogAnno;
 import org.apache.shiro.SecurityUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -27,9 +28,9 @@ import com.sky.service.IDangerAreaInfoService;
 @Controller
 @RequestMapping("/dangerAreaInfo")
 public class DangerAreaInfoController extends BaseController {
-    
+
     @Autowired private IDangerAreaInfoService dangerAreaInfoService;
-    
+
     @GetMapping("/manager")
     public String manager() {
         return "dangerAreaInfo/dangerAreaInfo";
@@ -56,7 +57,7 @@ public class DangerAreaInfoController extends BaseController {
         dangerAreaInfoService.selectDataGrid(pageInfo);
         return pageInfo;
     }
-    
+
     /**
      * 添加页面
      * @return
@@ -68,9 +69,10 @@ public class DangerAreaInfoController extends BaseController {
 
     /**
      * 添加
-     * @param 
+     * @param
      * @return
      */
+    @LogAnno(operateType = 1, TableName = "danger_area_info")
     @PostMapping("/add")
     @ResponseBody
     public Object add(DangerAreaInfo dangerAreaInfo) {
@@ -87,6 +89,7 @@ public class DangerAreaInfoController extends BaseController {
      * @param id
      * @return
      */
+    @LogAnno(operateType = 3, TableName = "danger_area_info")
     @RequestMapping("/delete")
     @ResponseBody
     public Object delete(Integer id) {
@@ -116,9 +119,10 @@ public class DangerAreaInfoController extends BaseController {
 
     /**
      * 编辑
-     * @param 
+     * @param
      * @return
      */
+    @LogAnno(operateType = 2, TableName = "danger_area_info")
     @RequestMapping("/edit")
     @ResponseBody
     public Object edit(DangerAreaInfo dangerAreaInfo) {
@@ -129,5 +133,5 @@ public class DangerAreaInfoController extends BaseController {
             return renderError("编辑失败！");
         }
     }
-    
+
 }
